@@ -2,7 +2,7 @@ import { FunctionComponent, memo } from "react";
 
 const Header: FunctionComponent = memo(() => {
   return (
-    <header className="absolute top-[0rem] left-[0rem] w-[90rem] flex flex-col items-center justify-center">
+    <header className="absolute top-[0rem] left-[0rem] w-[100%] flex flex-col items-center justify-center">
       <div className="self-stretch overflow-hidden flex flex-col py-[1rem] px-[5.5rem] items-center justify-center z-[0]">
         <div className="self-stretch flex flex-row items-center justify-between lg:flex-row lg:gap-[33.13rem] lg:items-start lg:justify-start md:flex-row md:gap-[33.13rem] md:items-start md:justify-start sm:flex-row sm:gap-[33.13rem] sm:items-start sm:justify-start">
           <img
