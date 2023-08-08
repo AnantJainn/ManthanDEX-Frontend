@@ -33,7 +33,7 @@ const HomePage: FunctionComponent = () => {
   }, []);
 
   return (
-    <div className="relative [background:linear-gradient(#000921,_#000921),_linear-gradient(180deg,_#191235,_#28075e_41.67%,_#c1294c)] w-full h-[330.69rem] overflow-hidden">
+    <div className="relative [background:linear-gradient(#000921,_#000921),_linear-gradient(180deg,_#191235,_#28075e_41.67%,_#c1294c)] w-[100%] h-[330.69rem] overflow-hidden">
       <img
         className="absolute top-[179.63rem] left-[0rem] w-[90rem] h-[35.25rem] overflow-hidden"
         alt=""
@@ -331,7 +331,7 @@ const HomePage: FunctionComponent = () => {
         alt=""
         src="/arrowsbottomright.svg"
       />
-      <footer className="absolute top-[328.25rem] left-[0rem] bg-gray-300 shadow-[-2px_0px_4px_rgba(0,_0,_0,_0.1)] w-[90rem] h-[2.44rem] flex flex-col py-[0rem] px-[3.56rem] box-border items-end justify-center text-left text-[0.63rem] text-controls-neutral-control-layer-color-50 font-work-sans">
+      <footer className="absolute top-[328.25rem] left-[0rem] bg-gray-300 shadow-[-2px_0px_4px_rgba(0,_0,_0,_0.1)] w-[100%] h-[2.44rem] flex flex-col py-[0rem] px-[3.56rem] box-border items-end justify-center text-left text-[0.63rem] text-controls-neutral-control-layer-color-50 font-work-sans">
         <div className="relative leading-[1.5rem]">
           Powered by TIMECHAINLABS
         </div>

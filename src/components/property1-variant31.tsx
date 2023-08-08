@@ -3,7 +3,7 @@ import CSS, { Property } from "csstype";
 
 type Property1Variant31Type = {
   showRectangleDiv?: boolean;
-  showRectangleDiv?: boolean;
+  // showRectangleDiv?: boolean;
 
   /** Style props */
   property1Variant3Position?: Property.Position;
@@ -31,7 +31,7 @@ const Property1Variant31: FunctionComponent<Property1Variant31Type> = memo(
     tRADEFontSize,
     tRADEFontWeight,
     rectangleDivHeight,
-    showRectangleDiv,
+    // showRectangleDiv,
   }) => {
     const property1Variant31Style: CSS.Properties = useMemo(() => {
       return {
