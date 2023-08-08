@@ -17,3 +17,50 @@ body {
 ::after {
   border-width: 0;
 }
+/* HomePage.css */
+
+.container {
+  /* Set a maximum width for the container */
+  max-width: 100%;
+  margin: 0 auto; /* Center the container horizontally */
+  /* padding: 0 1rem; */
+}
+
+/* Example media query for tablets */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0; /* Remove padding on smaller screens */
+  }
+
+  /* Add additional styles or adjustments for smaller screens */
+}
+/* ContainerCardFormFilter.css */
+
+.container-card-form-filter {
+  padding: 2rem;
+}
+
+.container-card-form-filter-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* ContainerCardFormFilter.css */
+
+/* ... (other styles) */
+
+.property-frame-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .property-frame-row {
+    justify-content: center;
+  }
+}
