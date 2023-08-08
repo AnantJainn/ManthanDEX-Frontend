@@ -22,8 +22,8 @@ const ContainerCardFormFilter: FunctionComponent = memo(() => {
                       erat et ornare risus.
                     </div>
                   </div>
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[3.75rem] ml-20">
-                    <div className="self-stretch flex flex-row py-[0rem] px-[4.13rem] property-frame-row">
+                  <div className="self-stretch flex flex-col items-start justify-start gap-6 md:gap-12 xl:gap-16 ml-20 mr-25 md:ml-10 xl:ml-20">
+                    <div className="self-stretch flex flex-row py-0 px-2 md:px-4 xl:px-8 property-frame-row">
                       <Property1Frame480955865
                         iconSecurity="/-icon-security1.svg"
                         property1Frame48095586Position="unset"
@@ -70,7 +70,7 @@ const ContainerCardFormFilter: FunctionComponent = memo(() => {
                         euTellusQuamFlex="1"
                       />
                     </div>
-                    <div className="self-stretch flex flex-row py-[0rem] px-[4.13rem] property-frame-row">
+                    <div className="self-stretch flex flex-row py-0 px-2 md:px-4 xl:px-8 property-frame-row">
                       <Property1Frame480955862
                         iconCardCoin="/-icon-card-coin1.svg"
                         property1Frame48095586Position="unset"

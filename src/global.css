@@ -57,9 +57,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: -10px; /* Add left margin */
 }
 
-@media screen and (max-width: 768px) {
+.property-frame-item {
+  margin-left: 10px; /* Adjust the margin between items */
+}
+
+@media screen and (max-width: 1300px) {
+  .property-frame-row {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1300px) {
   .property-frame-row {
     justify-content: center;
   }
