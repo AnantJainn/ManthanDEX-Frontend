@@ -43,7 +43,7 @@ const Trade86: FunctionComponent = () => {
             <div className="flex flex-row items-start justify-start gap-[3.75rem]">
               <Property1Variant3
                 tradeType="TRADE"
-                showRectangleDiv={showRectangleDiv}
+                // showRectangleDiv={showRectangleDiv}
                 property1Variant3Position="unset"
                 property1Variant3Height="1.25rem"
                 tRADEFontSize="0.88rem"
