@@ -29,12 +29,16 @@ const Property1Frame48095610: FunctionComponent<Property1Frame48095610Type> =
 
       return (
         <div
-          className="relative w-[509px] h-12 overflow-hidden text-left text-49xl text-white font-bai-jamjuree"
+          className="relative w-[809px] h-[150px] overflow-hidden text-left text-49xl text-white font-bai-jamjuree"
           style={property1Frame48095610Style}
         >
-          <div className="absolute top-[0px] left-[0px] font-semibold">
+          <div className="absolute top-[-15px] left-[9px] font-semibold">
             Manthan DEX
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
           <div className="absolute top-[0px] left-[0px] w-[433px] h-12">
             <div className="absolute top-[0px] left-[-155px] bg-darkturquoise w-[159px] h-14" />
           </div>
