@@ -10,7 +10,7 @@ const ContainerCardFormFilter: FunctionComponent = memo(() => {
   return (
     <section className="relative container-card-form-filter">
       <div className="container-card-form-filter-content">
-        <section className="absolute top-[101.81rem] left-[0rem] w-[90rem] h-[36.25rem] text-center text-[2.5rem] text-darkturquoise font-bai-jamjuree">
+        <section className="absolute top-[101.81rem] left-[14rem] w-[100%] h-[36.25rem] text-center text-[2.5rem] text-darkturquoise font-bai-jamjuree">
           <div className="absolute top-[-0.06rem] left-[7.5rem] rounded-11xl bg-midnightblue-400 w-[75rem] flex flex-col items-start justify-start">
             <div className="self-stretch my-0 mx-[!important] absolute top-[3.75rem] left-[0rem] flex flex-col items-center justify-start z-[0]">
               <div className="self-stretch flex flex-col items-start justify-start">

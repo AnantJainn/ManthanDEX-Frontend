@@ -33,7 +33,7 @@ const Property1Frame48095598: FunctionComponent<Property1Frame48095598Type> =
 
       return (
         <div
-          className="relative w-[1320px] h-[800px] overflow-hidden"
+          className="relative w-[100%] h-[800px] overflow-hidden"
           style={property1Frame48095598Style}
         >
           <Property1def5

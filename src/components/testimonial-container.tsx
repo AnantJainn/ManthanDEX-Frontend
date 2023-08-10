@@ -3,7 +3,7 @@ import Property1def8 from "./property1def8";
 
 const TestimonialContainer: FunctionComponent = memo(() => {
   return (
-    <section className="absolute top-[263.5rem] left-[calc(50%_-_720px)] bg-gray-700 w-[90rem] overflow-hidden flex flex-col py-[3.75rem] px-[0rem] box-border items-start justify-start text-center text-[2.5rem] text-darkturquoise font-bai-jamjuree">
+    <section className="absolute top-[218.5rem] left-[calc(50%_-_720px)] bg-gray-700 w-[90rem] overflow-hidden flex flex-col py-[3.75rem] px-[0rem] box-border items-start justify-start text-center text-[2.5rem] text-darkturquoise font-bai-jamjuree">
       <div className="self-stretch flex flex-col items-center justify-start gap-[1.5rem]">
         <div className="self-stretch flex flex-col items-center justify-start">
           <div className="self-stretch flex flex-col items-center justify-start">
