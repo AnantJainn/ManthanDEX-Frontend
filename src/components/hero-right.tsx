@@ -7,7 +7,7 @@ import Property1DEF from "./property1-d-e-f";
 
 const HeroRight: FunctionComponent = memo(() => {
   return (
-    <section className="absolute top-[6.31rem] left-[45.94rem] w-[49.88rem] h-[44.56rem]">
+    <section className="absolute top-[6.31rem] left-[55.94rem] w-[59.88rem] h-[44.56rem]">
       <Property1DEF4
         property1DEFPosition="absolute"
         property1DEFTop="18.94rem"

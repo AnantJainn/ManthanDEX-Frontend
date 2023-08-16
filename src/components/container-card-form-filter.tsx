@@ -10,7 +10,7 @@ const ContainerCardFormFilter: FunctionComponent = memo(() => {
   return (
     <section className="relative container-card-form-filter">
       <div className="container-card-form-filter-content">
-        <section className="absolute top-[101.81rem] left-[14rem] w-[100%] h-[36.25rem] text-center text-[2.5rem] text-darkturquoise font-bai-jamjuree">
+        <section className="absolute top-[101.81rem] left-[9%] w-[100%] h-[36.25rem] text-center text-[2.5rem] text-darkturquoise font-bai-jamjuree">
           <div className="absolute top-[-0.06rem] left-[7.5rem] rounded-11xl bg-midnightblue-400 w-[75rem] flex flex-col items-start justify-start">
             <div className="self-stretch my-0 mx-[!important] absolute top-[3.75rem] left-[0rem] flex flex-col items-center justify-start z-[0]">
               <div className="self-stretch flex flex-col items-start justify-start">
@@ -23,7 +23,7 @@ const ContainerCardFormFilter: FunctionComponent = memo(() => {
                     </div>
                   </div>
                   <div className="self-stretch flex flex-col items-start justify-start gap-6 md:gap-12 xl:gap-16 ml-20 mr-25 md:ml-10 xl:ml-20">
-                    <div className="self-stretch flex flex-row py-0 px-2 md:px-4 xl:px-8 property-frame-row">
+                    <div className="self-stretch flex flex-row py-0 px-2 md:px-4 xl:px-8 property-frame-row gap-4">
                       <Property1Frame480955865
                         iconSecurity="/-icon-security1.svg"
                         property1Frame48095586Position="unset"
@@ -70,7 +70,7 @@ const ContainerCardFormFilter: FunctionComponent = memo(() => {
                         euTellusQuamFlex="1"
                       />
                     </div>
-                    <div className="self-stretch flex flex-row py-0 px-2 md:px-4 xl:px-8 property-frame-row">
+                    <div className="self-stretch flex flex-row py-0 px-2 md:px-4 xl:px-8 property-frame-row gap-4">
                       <Property1Frame480955862
                         iconCardCoin="/-icon-card-coin1.svg"
                         property1Frame48095586Position="unset"
