@@ -77,11 +77,11 @@ const Property1Frame480956165: FunctionComponent<Property1Frame480956165Type> =
                   <b className="relative">+0.23%</b>
                 </div>
               </div>
-              <img
+              {/* <img
                 className="relative w-[59.96px] h-[39.58px]"
                 alt=""
                 src={vector583}
-              />
+              /> */}
             </div>
           </div>
         </div>

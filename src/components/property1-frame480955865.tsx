@@ -100,6 +100,7 @@ const Property1Frame480955865: FunctionComponent<Property1Frame480955865Type> =
                 className="relative w-[35.66px] h-10"
                 alt=""
                 src={iconSecurity}
+                // src="/image-81@2x.png"
               />
               <div className="relative font-medium inline-block w-[218px] shrink-0">
                 <p className="m-0">Safe and Secure</p>

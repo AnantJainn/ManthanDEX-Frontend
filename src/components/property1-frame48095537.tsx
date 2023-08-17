@@ -627,10 +627,10 @@ const Property1Frame48095537: FunctionComponent<Property1Frame48095537Type> =
 
       return (
         <div
-          className="relative rounded-t-none rounded-b-smi bg-gray-700 flex flex-col items-start justify-start gap-[8px] text-left text-sm text-royalblue font-bai-jamjuree"
+          className="relative rounded-t-none rounded-b-smi bg-gray-700 flex flex-col items-start justify-start gap-[8px] text-left text-sm text-royalblue font-bai-jamjuree "
           style={property1Frame48095537Style}
         >
-          <div className="relative w-80 h-[32.26px]" style={groupDivStyle}>
+          <div className="relative w-80 h-[32.26px] " style={groupDivStyle}>
             <div
               className="absolute top-[0px] left-[0px] w-80 h-[32.26px] flex flex-row py-0 px-2 box-border items-start justify-between"
               style={frameDiv19Style}
@@ -671,11 +671,11 @@ const Property1Frame48095537: FunctionComponent<Property1Frame48095537Type> =
             </div>
           </div>
           <div
-            className="flex flex-col items-start justify-start gap-[16px] text-right text-smi text-lightgray font-work-sans"
+            className="flex flex-col items-start justify-start gap-[16px] text-right text-smi text-lightgray font-work-sans "
             style={frameDiv22Style}
           >
             <div
-              className="w-80 flex flex-row py-0 px-2 box-border items-center justify-between"
+              className="w-80 flex flex-row py-0 px-2 box-border items-center justify-between right-[160rem]"
               style={leadingContentStyle}
             >
               <div

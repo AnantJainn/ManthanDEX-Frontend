@@ -11,8 +11,18 @@ import Property1Frame48095598 from "./property1-frame48095598";
 import HeroRight from "./hero-right";
 import ContainerHeroLeft from "./container-hero-left";
 import Header from "./header";
+import Property1Frame480956162 from "./property1-frame480956162";
+import { memo, useMemo } from "react";
+import CSS, { Property } from "csstype";
+import Property1Frame480956165 from "./property1-frame480956165";
+import Property1Frame480956164 from "./property1-frame480956164";
+import Property1Frame480956163 from "./property1-frame480956163";
+import Property1Frame480956161 from "./property1-frame480956161";
+import Property1Frame48095616 from "./property1-frame48095616";
+import Property1Frame119491 from "./property1-frame119491";
 import Property1DEF6 from "./property1-d-e-f6";
 import Market from "./Market";
+
 const HomePage: FunctionComponent = () => {
   const navigate = useNavigate();
 
@@ -31,6 +41,54 @@ const HomePage: FunctionComponent = () => {
   const onButton5ContainerClick = useCallback(() => {
     // Please sync "Home Page" to the project
   }, []);
+  // const frameDiv72Style: CSS.Properties = useMemo(() => {
+  //   return {
+  //     width: frameDivWidth,
+  //   };
+  // }, [frameDivWidth]);
+
+  // const frameDiv73Style: CSS.Properties = useMemo(() => {
+  //   return {
+  //     width: frameDivWidth1,
+  //     alignSelf: frameDivAlignSelf,
+  //   };
+  // }, [frameDivWidth1, frameDivAlignSelf]);
+
+  // const frameDiv74Style: CSS.Properties = useMemo(() => {
+  //   return {
+  //     width: frameDivWidth2,
+  //   };
+  // }, [frameDivWidth2]);
+  // const frameDiv75Style: CSS.Properties = useMemo(() => {
+  //   return {
+  //     alignSelf: frameDivAlignSelf1,
+  //   };
+  // }, [frameDivAlignSelf1]);
+
+  // const frameDiv76Style: CSS.Properties = useMemo(() => {
+  //   return {
+  //     alignSelf: frameDivAlignSelf2,
+  //   };
+  // }, [frameDivAlignSelf2]);
+
+  // const frameDiv77Style: CSS.Properties = useMemo(() => {
+  //   return {
+  //     width: frameDivWidth3,
+  //     alignSelf: frameDivAlignSelf3,
+  //   };
+  // }, [frameDivWidth3, frameDivAlignSelf3]);
+  // const frameDiv78Style: CSS.Properties = useMemo(() => {
+  //   return {
+  //     width: frameDivWidth4,
+  //     alignSelf: frameDivAlignSelf8,
+  //   };
+  // }, [frameDivWidth4, frameDivAlignSelf8]);
+  // const frameDiv79Style: CSS.Properties = useMemo(() => {
+  //   return {
+  //     width: frameDivWidth5,
+  //     alignSelf: frameDivAlignSelf13,
+  //   };
+  // }, [frameDivWidth5, frameDivAlignSelf13]);
 
   return (
     <div className="relative [background:linear-gradient(#000921,_#000921),_linear-gradient(200deg,_#191235,_#28075e_41.67%,_#c1294c)] w-[111rem] h-[330.69rem] overflow-hidden">
@@ -62,11 +120,11 @@ const HomePage: FunctionComponent = () => {
         </div>
       </section>
 
-      <img
+      {/* <img
         className="absolute top-[228.63rem] left-[10rem] w-[90rem] h-[35.25rem] overflow-hidden"
         alt=""
         src="/popular_market.png"
-      />
+      /> */}
       <Property1DefaultIcon
         property1DefaultIconPosition="absolute"
         property1DefaultIconWidth="90rem"
@@ -416,12 +474,7 @@ const HomePage: FunctionComponent = () => {
         </div>
       </section>
       <TestimonialContainer />
-      {/* <Market
-          title="Sample Market"
-          description="Explore a wide range of products."
-          imageUrl="http://localhost:3000/main-blank-1@2x.png"
-        /> */}
-      <Property1def7
+      {/* <Property1def7
         image8="/image-82@2x.png"
         image13="/image-82@2x.png"
         imageRemovebgPreview1="/image-82@2x.png"
@@ -477,17 +530,151 @@ const HomePage: FunctionComponent = () => {
         frameDivAlignSelf17="stretch"
         buttonSignInWidth="unset"
         buttonSignInAlignSelf="stretch"
-      />
+      /> */}
 
+      <div
+        className="flex flex-col items-end justify-start gap-[28px] absolute top-[228.63rem] left-[0.2rem] w-[90rem] h-[35.25rem] overflow-hidden"
+        // style={frameDiv75Style}
+      >
+        <div
+          className="flex flex-col items-start justify-start gap-[40px]"
+          // style={frameDiv76Style}
+        >
+          <div
+            className="relative w-[1200px] h-[138px]"
+            // style={frameDiv77Style}
+          >
+            <Property1Frame480956165
+              image8="/image-8@2x.png"
+              vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="0px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+
+            <Property1Frame480956164
+              image13="/image-13@2x.png"
+              vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="319.33px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+            <Property1Frame480956163
+              imageRemovebgPreview1="/imageremovebgpreview-1@2x.png"
+              vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="638.67px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+            <Property1Frame480956164
+              image13="/image-13@2x.png"
+              vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="958px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+          </div>
+          <div
+            className="relative w-[1200px] h-[138px]"
+            // style={frameDiv78Style}
+          >
+            <Property1Frame480956162
+              image10="/image-101@2x.png"
+              vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="0px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+            <Property1Frame480956161
+              image12="/image-121@2x.png"
+              vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="319.33px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+            <Property1Frame48095616
+              image11="/image-111@2x.png"
+              vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="638.67px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+            <Property1Frame480956161
+              image12="/image-121@2x.png"
+              vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="958px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+          </div>
+          <div
+            className="relative w-[1200px] h-[138px]"
+            // style={frameDiv79Style}
+          >
+            <Property1Frame480956162
+              image10="/image-101@2x.png"
+              vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="0px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+            <Property1Frame480956161
+              image12="/image-121@2x.png"
+              vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="319.33px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+            <Property1Frame48095616
+              image11="/image-111@2x.png"
+              // vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="638.67px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+            <Property1Frame480956161
+              image12="/image-121@2x.png"
+              // vector583="/vector-5832.svg"
+              property1Frame48095616Position="absolute"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="958px"
+              property1Frame48095616Width="unset"
+              frameDivAlignSelf="unset"
+            />
+          </div>
+        </div>
+        <Property1Frame119491
+          // vector10="/vector-5832.svg"
+          property1Frame11949Position="unset"
+          property1Frame11949Width="156px"
+          property1Frame11949AlignSelf="unset"
+        />
+      </div>
       <ReplaceCEXContainer />
       <TradingFeeContainer />
       <ContainerCardFormFilter />
-      {/* <Property1DEF6
-          frame48095564="/dex_image.jpg"
-          property1DEFPosition="absolute"
-          property1DEFTop="48.06rem"
-          property1DEFLeft="7.56rem"
-        /> */}
 
       <Property1Frame48095598
         group1="/group-14.svg"
