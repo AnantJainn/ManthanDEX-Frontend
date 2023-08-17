@@ -32,7 +32,8 @@ const Trade86: FunctionComponent = () => {
           Powered by TIMECHAINLABS
         </div>
       </footer>
-      <header className="absolute top-[0rem] left-[0rem] bg-gray-700 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.1)] w-[90rem] flex flex-col py-[0.5rem] px-[3.75rem] box-border items-center justify-center text-left text-[0.88rem] text-gainsboro-100 font-bai-jamjuree">
+
+      <header className="absolute top-[0rem] left-[0rem] w-[100%] flex flex-col items-center justify-center">
         <div className="self-stretch bg-gray-700 flex flex-row py-[0rem] px-[5rem] items-center justify-between">
           <div className="w-[16.25rem] flex flex-row items-center justify-between">
             <img
@@ -460,10 +461,13 @@ const Trade86: FunctionComponent = () => {
                 </div>
               </div>
             </section>
-            <section className="w-[20rem] flex flex-col items-center justify-start">
-              <div className="self-stretch relative rounded-4xs bg-gray-700 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.05)] [backdrop-filter:blur(50px)] h-[38.13rem]" />
-              <div className="self-stretch flex flex-col items-start justify-start mt-[-38.12rem]">
-                <div className="self-stretch rounded-t-none rounded-b-smi flex flex-col items-start justify-start gap-[0.5rem]">
+            <section
+              className="w-[20rem] flex flex-col items-center justify-start"
+              style={{ marginLeft: "auto" }}
+            >
+              <div className=" self-stretch relative rounded-4xs bg-gray-700 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.05)] [backdrop-filter:blur(50px)] h-[38.13rem]" />
+              <div className=" self-stretch flex flex-col items-start justify-start mt-[-38.12rem]">
+                <div className=" self-stretch rounded-t-none rounded-b-smi flex flex-col items-start justify-start gap-[0.5rem]">
                   <Property1Group48095502
                     dimensionLabel="/vector-9.svg"
                     dimensionValue="/vector-101.svg"
