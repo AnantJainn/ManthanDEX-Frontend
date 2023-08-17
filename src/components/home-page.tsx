@@ -545,16 +545,17 @@ const HomePage: FunctionComponent = () => {
             // style={frameDiv77Style}
           >
             <Property1Frame480956165
-              // image8="/image-81@2x.png"
-              // vector583="/vector-5832.svg"
+              image8="/image-8@2x.png"
+              vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
-              // property1Frame48095616Top="0px"
-              // property1Frame48095616Left="0px"
-              // property1Frame48095616Width="unset"
+              property1Frame48095616Top="0px"
+              property1Frame48095616Left="0px"
+              property1Frame48095616Width="unset"
               frameDivAlignSelf="unset"
             />
+
             <Property1Frame480956164
-              image13="/image-81@2x.png"
+              image13="/image-13@2x.png"
               vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
               property1Frame48095616Top="0px"
@@ -563,7 +564,7 @@ const HomePage: FunctionComponent = () => {
               frameDivAlignSelf="unset"
             />
             <Property1Frame480956163
-              imageRemovebgPreview1="/image-81@2x.png"
+              imageRemovebgPreview1="/imageremovebgpreview-1@2x.png"
               vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
               property1Frame48095616Top="0px"
@@ -572,7 +573,7 @@ const HomePage: FunctionComponent = () => {
               frameDivAlignSelf="unset"
             />
             <Property1Frame480956164
-              image13="/image-81@2x.png"
+              image13="/image-13@2x.png"
               vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
               property1Frame48095616Top="0px"
@@ -586,7 +587,7 @@ const HomePage: FunctionComponent = () => {
             // style={frameDiv78Style}
           >
             <Property1Frame480956162
-              image10="/image-81@2x.png"
+              image10="/image-101@2x.png"
               vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
               property1Frame48095616Top="0px"
@@ -595,7 +596,7 @@ const HomePage: FunctionComponent = () => {
               frameDivAlignSelf="unset"
             />
             <Property1Frame480956161
-              image12="/image-81@2x.png"
+              image12="/image-121@2x.png"
               vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
               property1Frame48095616Top="0px"
@@ -604,7 +605,7 @@ const HomePage: FunctionComponent = () => {
               frameDivAlignSelf="unset"
             />
             <Property1Frame48095616
-              image11="/image-81@2x.png"
+              image11="/image-111@2x.png"
               vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
               property1Frame48095616Top="0px"
@@ -613,7 +614,7 @@ const HomePage: FunctionComponent = () => {
               frameDivAlignSelf="unset"
             />
             <Property1Frame480956161
-              image12="/image-81@2x.png"
+              image12="/image-121@2x.png"
               vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
               property1Frame48095616Top="0px"
@@ -627,7 +628,7 @@ const HomePage: FunctionComponent = () => {
             // style={frameDiv79Style}
           >
             <Property1Frame480956162
-              image10="/image-81@2x.png"
+              image10="/image-101@2x.png"
               vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
               property1Frame48095616Top="0px"
@@ -636,7 +637,7 @@ const HomePage: FunctionComponent = () => {
               frameDivAlignSelf="unset"
             />
             <Property1Frame480956161
-              image12="/image-81@2x.png"
+              image12="/image-121@2x.png"
               vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
               property1Frame48095616Top="0px"
@@ -645,8 +646,8 @@ const HomePage: FunctionComponent = () => {
               frameDivAlignSelf="unset"
             />
             <Property1Frame48095616
-              image11="/image-81@2x.png"
-              vector583="/vector-5832.svg"
+              image11="/image-111@2x.png"
+              // vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
               property1Frame48095616Top="0px"
               property1Frame48095616Left="638.67px"
@@ -654,8 +655,8 @@ const HomePage: FunctionComponent = () => {
               frameDivAlignSelf="unset"
             />
             <Property1Frame480956161
-              image12="/image-81@2x.png"
-              vector583="/vector-5832.svg"
+              image12="/image-121@2x.png"
+              // vector583="/vector-5832.svg"
               property1Frame48095616Position="absolute"
               property1Frame48095616Top="0px"
               property1Frame48095616Left="958px"
@@ -665,7 +666,7 @@ const HomePage: FunctionComponent = () => {
           </div>
         </div>
         <Property1Frame119491
-          vector10="/vector-5832.svg"
+          // vector10="/vector-5832.svg"
           property1Frame11949Position="unset"
           property1Frame11949Width="156px"
           property1Frame11949AlignSelf="unset"
