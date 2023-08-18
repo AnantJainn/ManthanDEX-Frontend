@@ -1858,8 +1858,8 @@ const Trade86: FunctionComponent = () => {
       className="overflow-hidden bg-[#0c1326] flex flex-col"
       id="TradeRoot"
     >
-      <div className="shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.1)] bg-[#000921] flex flex-col justify-end mb-8 h-16 shrink-0 px-16 py-2">
-        <div className="bg-[#000921] flex flex-row justify-between mr-3 items-center">
+      <div className="shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.1)] bg-[#000921] flex flex-col justify-end mb-4 h-10 shrink-0 px-10 py-1">
+        <div className="bg-[#000921] flex flex-row justify-between mr-1 items-center">
           <div className="flex flex-row gap-10 items-start">
             <img
               src="https://file.rendit.io/n/bjc0w05cmyb1VYrgjce3.svg"
@@ -1890,7 +1890,7 @@ const Trade86: FunctionComponent = () => {
               id="Bellpinlight"
             />
             <button
-              className="border-solid border-[#e4e4e4] flex flex-row gap-2 w-12 shrink-0 h-6 items-center px-1 border-0 rounded-lg"
+              className="border-solid border-[#f41212] flex flex-row gap-2 w-12 shrink-0 h-6 items-center px-1 border-0 rounded-lg bg-black"
               id="SignUpButton"
             >
               <img
@@ -2247,15 +2247,15 @@ const Trade86: FunctionComponent = () => {
           </div>
           <div className="flex flex-col mr-0 gap-4 w-2/3">
             <div className="flex flex-row mr-20 gap-5 items-center">
-              <div className="bg-[#092879] self-start flex flex-row justify-end mr-3 gap-12 h-16 items-center pl-4 pr-2 py-3 rounded-tl-lg rounded-bl-lg">
+              <div className="bg-[#092879] self-start flex flex-row justify-end mr-3 gap-6 h-10 items-center pl-4 pr-2 py-3 rounded-tl-lg rounded-bl-lg">
                 <img
                   src="https://file.rendit.io/n/sMf1sTOFanuIGYJDnuiO.svg"
-                  className="mr-0 w-8 shrink-0"
+                  className="mr-[-10] w-8 shrink-0"
                   id="BTC"
                 />
-                <div className="flex flex-col gap-1 w-24 shrink-0 items-start">
+                <div className="flex flex-col gap-0 w-12 shrink-0 items-start">
                   <div
-                    className="text-xl font-['Bai_Jamjuree'] font-semibold text-white"
+                    className="text-l font-['Bai_Jamjuree'] font-semibold text-white"
                     id="BTC1"
                   >
                     BTC/USD
@@ -2537,7 +2537,7 @@ const Trade86: FunctionComponent = () => {
                     </div>
                   </button>
                   <button
-                    className="border-solid border-white rounded-tr-lg flex flex-row justify-center gap-2 w-1/2 h-8 items-center border-0"
+                    className="border-solid border-white rounded-tr-lg flex flex-row justify-center gap-2 w-1/2 h-8 items-center border-0 bg-black"
                     id="Button14"
                   >
                     <img
@@ -2593,7 +2593,7 @@ const Trade86: FunctionComponent = () => {
                     BTC
                   </div>
                 </div>
-                <div className="self-end flex flex-row mr-2 gap-2 w-1/2 items-start">
+                <div className="self-end flex flex-row mr-4 gap-2 w-1/2 items-start whitespace-nowrap">
                   <div className="text-xs font-['Inter'] leading-[16px] text-[#767e9c]">
                     Price:
                   </div>
@@ -2603,7 +2603,7 @@ const Trade86: FunctionComponent = () => {
                   >
                     1{" "}
                     <div className="text-[#767e9c] contents" id="BTC32">
-                      BTC =
+                      BTC=
                     </div>
                   </div>
                   <div
@@ -2616,6 +2616,7 @@ const Trade86: FunctionComponent = () => {
                     </div>
                   </div>
                 </div>
+
                 <div
                   className="shadow-[0px_1px_2px_0px_rgba(0,_0,_0,_0.05)] overflow-hidden bg-[rgba(0,_15,_55,_0.4)] flex flex-row justify-between items-center mx-1 px-3 rounded"
                   id="SelectMenuTrigger2"
@@ -2647,7 +2648,7 @@ const Trade86: FunctionComponent = () => {
                   </div>
                 </div>
                 <div
-                  className="bg-[#06e7ed] self-center flex flex-col w-3/5 h-8 shrink-0 items-center py-1 rounded-lg"
+                  className="bg-[#06e7ed] self-center flex flex-col w-3/5 h-6 shrink-0 items-center py-2 rounded-lg"
                   id="Hovered"
                 >
                   <div className="font-['Bai_Jamjuree'] font-bold capitalize text-[#0e062c]">
@@ -2918,7 +2919,7 @@ const Trade86: FunctionComponent = () => {
                 </div>
               </button>
               <button
-                className="border-solid border-white flex flex-col mt-0 w-24 shrink-0 h-8 items-center py-2 border-0"
+                className="border-solid bg-black border-white flex flex-col mt-0 w-24 shrink-0 h-8 items-center py-2 border-0"
                 id="Button6"
               >
                 <div className="text-xs font-['Bai_Jamjuree'] text-white">
@@ -2926,7 +2927,7 @@ const Trade86: FunctionComponent = () => {
                 </div>
               </button>
               <button
-                className="border-solid border-white rounded-tr-lg flex flex-col mt-0 w-24 shrink-0 h-8 items-center py-2 border-0"
+                className="border-solid bg-black border-white rounded-tr-lg flex flex-col mt-0 w-24 shrink-0 h-8 items-center py-2 border-0"
                 id="Button7"
               >
                 <div className="text-xs font-['Bai_Jamjuree'] text-white">
@@ -2936,22 +2937,22 @@ const Trade86: FunctionComponent = () => {
             </div>
             <div className="bg-[#000a25] self-stretch flex flex-col gap-2 pt-1 pb-6 rounded-tr-lg rounded-br-lg rounded-bl-lg">
               <div className="flex flex-row mr-24 gap-16 items-center">
-                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white mr-20">
+                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white mr-10 ml-10"> {/* Added ml-auto to shift "Market" to the right */}
                   Market
                 </div>
-                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white mr-16">
+                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white mr-12">
                   Qty.
                 </div>
-                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white mr-12">
+                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white mr-11">
                   Value
                 </div>
-                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white mr-12">
+                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white mr-6">
                   Side
                 </div>
-                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white self-start mr-1 w-1/6">
+                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white self-start mr-5 w-1/8">
                   Unrealised P&L
                 </div>
-                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white">
+                <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white mr-8">
                   Realised P&L
                 </div>
                 <div className="text-center text-xs font-['Bai_Jamjuree'] tracking-[0.5] text-white">
@@ -2986,7 +2987,7 @@ const Trade86: FunctionComponent = () => {
                     id="BTC26"
                   />
                 </div>
-                <div className="flex flex-col justify-between w-16 shrink-0 h-32 items-start mt-1 mr-20">
+                <div className="flex flex-col justify-between w-13 shrink-0 h-32 items-start mt-1 mr-10">
                   <div
                     className="text-xs font-['Bai_Jamjuree'] text-white"
                     id="BTC3"
@@ -3224,7 +3225,7 @@ const Trade86: FunctionComponent = () => {
                 </div>
                 <div className="flex flex-col justify-between w-12 shrink-0 h-32 items-start">
                   <button
-                    className="border-solid border-white flex flex-col w-12 items-center px-2 py-0 border-0 rounded-[30px]"
+                    className="border-solid border-white flex flex-col w-12 items-center px-2 py-0 border-0 rounded-[30px]  bg-black"
                     id="Button8"
                   >
                     <div className="text-xs font-['Bai_Jamjuree'] font-medium capitalize text-white">
@@ -3232,7 +3233,7 @@ const Trade86: FunctionComponent = () => {
                     </div>
                   </button>
                   <button
-                    className="border-solid border-white flex flex-col w-12 items-center px-2 py-0 border-0 rounded-[30px]"
+                    className="border-solid border-white flex flex-col w-12 items-center px-2 py-0 border-0 rounded-[30px]  bg-black"
                     id="Button9"
                   >
                     <div className="text-xs font-['Bai_Jamjuree'] font-medium capitalize text-white">
@@ -3240,7 +3241,7 @@ const Trade86: FunctionComponent = () => {
                     </div>
                   </button>
                   <button
-                    className="border-solid border-white flex flex-col w-12 items-center px-2 py-0 border-0 rounded-[30px]"
+                    className="border-solid border-white flex flex-col w-12 items-center px-2 py-0 border-0 rounded-[30px]  bg-black"
                     id="Button10"
                   >
                     <div className="text-xs font-['Bai_Jamjuree'] font-medium capitalize text-white">
@@ -3248,7 +3249,7 @@ const Trade86: FunctionComponent = () => {
                     </div>
                   </button>
                   <button
-                    className="border-solid border-white flex flex-col w-12 items-center px-2 py-0 border-0 rounded-[30px]"
+                    className="border-solid border-white flex flex-col w-12 items-center px-2 py-0 border-0 rounded-[30px] bg-black"
                     id="Button11"
                   >
                     <div className="text-xs font-['Bai_Jamjuree'] font-medium capitalize text-white">
@@ -3256,7 +3257,7 @@ const Trade86: FunctionComponent = () => {
                     </div>
                   </button>
                   <button
-                    className="border-solid border-white flex flex-col w-12 items-center px-2 py-0 border-0 rounded-[30px]"
+                    className="border-solid border-white flex flex-col w-12 items-center px-2 py-0 border-0 rounded-[30px] bg-black"
                     id="Button12"
                   >
                     <div className="text-xs font-['Bai_Jamjuree'] font-medium capitalize text-white">

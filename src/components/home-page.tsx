@@ -91,7 +91,7 @@ const HomePage: FunctionComponent = () => {
   // }, [frameDivWidth5, frameDivAlignSelf13]);
 
   return (
-    <div className="relative [background:linear-gradient(#000921,_#000921),_linear-gradient(200deg,_#191235,_#28075e_41.67%,_#c1294c)] w-[111rem] h-[330.69rem] overflow-hidden">
+    <div className="relative [background:linear-gradient(#000921,_#000921),_linear-gradient(200deg,_#191235,_#28075e_41.67%,_#c1294c)] w-[100%] h-[330.69rem] overflow-hidden mr-50">
       <img
         className="absolute top-[179.63rem] left-[10rem] w-[100rem] h-[35.25rem] overflow-hidden"
         alt=""
@@ -107,7 +107,7 @@ const HomePage: FunctionComponent = () => {
         alt=""
         src="/dex_image.jpg"
       />
-      <section className="absolute top-[214rem] left-[calc(50%_-_720px)] bg-gray-700 w-[90rem] overflow-hidden flex flex-col py-[3.75rem] px-[0rem] box-border items-start justify-start text-center text-[2.5rem] text-darkturquoise font-bai-jamjuree">
+      <section className="absolute top-[214rem] bg-gray-700 w-[100%] overflow-hidden flex flex-col py-[3.75rem] px-[0rem] box-border items-start justify-start text-center text-[2.5rem] text-darkturquoise font-bai-jamjuree">
         <div className="self-stretch flex flex-col items-center justify-start">
           <div className="self-stretch flex flex-col items-center justify-start">
             <b className="self-stretch relative">Popular Markets</b>
