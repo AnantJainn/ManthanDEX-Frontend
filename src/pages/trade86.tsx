@@ -1,4 +1,4 @@
-import { FunctionComponent, useCallback } from "react";
+import React, { FunctionComponent, useCallback, useState } from "react";
 import Property1Variant3 from "../components/property1-variant3";
 import BellPinLight from "../components/bell-pin-light";
 import ContainerCard from "../components/container-card";
@@ -6,8 +6,14 @@ import DeviderIcon from "../components/devider-icon";
 import Property1Group48095502 from "../components/property1-group48095502";
 import Property1Frame48095537 from "../components/property1-frame48095537";
 import Property1POSITION from "../components/property1-p-o-s-i-t-i-o-n";
+import BtcUsd from "../components/BtcUsd"
 
-const Trade86: FunctionComponent = () => {
+const Trade86: React.FC = () => {
+  const [isContentVisible, setIsContentVisible] = useState(false);
+
+  const handleToggleContent = () => {
+    setIsContentVisible(prevState => !prevState);
+  };
   const onFrameLink1Click = useCallback(() => {
     // Please sync "Trade 67" to the project
   }, []);
@@ -2247,12 +2253,18 @@ const Trade86: FunctionComponent = () => {
           </div>
           <div className="flex flex-col mr-0 gap-4 w-2/3">
             <div className="flex flex-row mr-20 gap-5 items-center">
-              <div className="bg-[#092879] self-start flex flex-row justify-end mr-3 gap-6 h-10 items-center pl-4 pr-2 py-3 rounded-tl-lg rounded-bl-lg">
+              <div
+                className="bg-[#092879] self-start flex flex-row justify-end mr-3 gap-6 h-10 items-center pl-4 pr-2 py-3 rounded-tl-lg rounded-bl-lg"
+              // Replace handleClick with the actual function you want to execute
+              >
+
                 <img
                   src="https://file.rendit.io/n/sMf1sTOFanuIGYJDnuiO.svg"
                   className="mr-[-10] w-8 shrink-0"
                   id="BTC"
+
                 />
+
                 <div className="flex flex-col gap-0 w-12 shrink-0 items-start">
                   <div
                     className="text-l font-['Bai_Jamjuree'] font-semibold text-white"
@@ -2268,8 +2280,11 @@ const Trade86: FunctionComponent = () => {
                   src="https://file.rendit.io/n/USSH3rfWYFKWcZBBPFfD.svg"
                   className="w-5 shrink-0"
                   id="Expanddownlight1"
+                  onClick={handleToggleContent}
                 />
+                {/* {isContentVisible && <BtcUsd />} */}
               </div>
+
               <div className="flex flex-col mr-5 gap-2 w-24 shrink-0 items-start">
                 <div className="font-['Work_Sans'] font-semibold leading-[24px] text-[#28c59f]">
                   62,238.00
@@ -2311,12 +2326,13 @@ const Trade86: FunctionComponent = () => {
                 </div>
               </div>
             </div>
+            {isContentVisible && <BtcUsd />}
             <div className="flex flex-col" id="Chart">
               <div
                 className="border-solid border-[#0c1326] flex flex-col border-0"
                 id="Cardtypes"
               >
-                <div className="bg-[#000a25] flex flex-col gap-px items-end mx-0 pt-3 pb-2 px-px rounded-lg">
+                {!isContentVisible && <div className="bg-[#000a25] flex flex-col gap-px items-end mx-0 pt-3 pb-2 px-px rounded-lg">
                   <div className="self-stretch flex flex-row justify-between items-start mb-1 ml-4 mr-5">
                     <div className="flex flex-row w-1/2 items-start">
                       <div className="overflow-hidden bg-[#010c29] flex flex-col w-12 shrink-0 h-6 items-center py-1 rounded-tl rounded-bl">
@@ -2516,7 +2532,7 @@ const Trade86: FunctionComponent = () => {
                       21
                     </div>
                   </div>
-                </div>
+                </div>}
               </div>
             </div>
           </div>
@@ -3276,8 +3292,10 @@ const Trade86: FunctionComponent = () => {
           id="Text1"
         >
           Powered by TIMECHAINLABS
+          {/* <btcusd /> */}
         </div>
       </div>
+
     </div>
 
   );
