@@ -41,54 +41,6 @@ const HomePage: FunctionComponent = () => {
   const onButton5ContainerClick = useCallback(() => {
     // Please sync "Home Page" to the project
   }, []);
-  // const frameDiv72Style: CSS.Properties = useMemo(() => {
-  //   return {
-  //     width: frameDivWidth,
-  //   };
-  // }, [frameDivWidth]);
-
-  // const frameDiv73Style: CSS.Properties = useMemo(() => {
-  //   return {
-  //     width: frameDivWidth1,
-  //     alignSelf: frameDivAlignSelf,
-  //   };
-  // }, [frameDivWidth1, frameDivAlignSelf]);
-
-  // const frameDiv74Style: CSS.Properties = useMemo(() => {
-  //   return {
-  //     width: frameDivWidth2,
-  //   };
-  // }, [frameDivWidth2]);
-  // const frameDiv75Style: CSS.Properties = useMemo(() => {
-  //   return {
-  //     alignSelf: frameDivAlignSelf1,
-  //   };
-  // }, [frameDivAlignSelf1]);
-
-  // const frameDiv76Style: CSS.Properties = useMemo(() => {
-  //   return {
-  //     alignSelf: frameDivAlignSelf2,
-  //   };
-  // }, [frameDivAlignSelf2]);
-
-  // const frameDiv77Style: CSS.Properties = useMemo(() => {
-  //   return {
-  //     width: frameDivWidth3,
-  //     alignSelf: frameDivAlignSelf3,
-  //   };
-  // }, [frameDivWidth3, frameDivAlignSelf3]);
-  // const frameDiv78Style: CSS.Properties = useMemo(() => {
-  //   return {
-  //     width: frameDivWidth4,
-  //     alignSelf: frameDivAlignSelf8,
-  //   };
-  // }, [frameDivWidth4, frameDivAlignSelf8]);
-  // const frameDiv79Style: CSS.Properties = useMemo(() => {
-  //   return {
-  //     width: frameDivWidth5,
-  //     alignSelf: frameDivAlignSelf13,
-  //   };
-  // }, [frameDivWidth5, frameDivAlignSelf13]);
 
   return (
     <div className="relative [background:linear-gradient(#000921,_#000921),_linear-gradient(200deg,_#191235,_#28075e_41.67%,_#c1294c)] w-[100%] h-[330.69rem] overflow-hidden mr-50">
@@ -412,7 +364,7 @@ const HomePage: FunctionComponent = () => {
         alt=""
         src="/arrowsbottomright.svg"
       />
-      <footer className="absolute top-[328.25rem] left-[0rem] bg-gray-300 shadow-[-2px_0px_4px_rgba(0,_0,_0,_0.1)] w-[100%] h-[2.44rem] flex flex-col py-[0rem] px-[3.56rem] box-border items-end justify-center text-left text-[0.63rem] text-controls-neutral-control-layer-color-50 font-work-sans">
+      <footer className="absolute top-[328.25rem] left-[0rem] bg-gray-700 shadow-[-2px_0px_4px_rgba(0,_0,_0,_0.1)] w-[100%] h-[2.44rem] flex flex-col py-[0rem] px-[3.56rem] box-border items-end justify-center text-left text-[0.63rem] text-controls-neutral-control-layer-color-50 font-work-sans">
         <div className="relative leading-[1.5rem]">
           Powered by TIMECHAINLABS
         </div>
@@ -533,17 +485,11 @@ const HomePage: FunctionComponent = () => {
       /> */}
 
       <div
-        className="flex flex-col items-end justify-start gap-[28px] absolute top-[228.63rem] left-[0.2rem] w-[90rem] h-[35.25rem] overflow-hidden"
-        // style={frameDiv75Style}
+        className="flex flex-col items-end justify-start gap-[40px] absolute top-[228.63rem] left-[-6rem] w-[90rem] h-[35.25rem] overflow-hidden"
+        style={{ padding: "60px 120px" }}
       >
-        <div
-          className="flex flex-col items-start justify-start gap-[40px]"
-          // style={frameDiv76Style}
-        >
-          <div
-            className="relative w-[1200px] h-[138px]"
-            // style={frameDiv77Style}
-          >
+        <div className="flex flex-col items-start justify-start gap-[40px]">
+          <div className="relative w-[1200px] h-[138px]">
             <Property1Frame480956165
               image8="/image-8@2x.png"
               vector583="/vector-5832.svg"
@@ -582,10 +528,7 @@ const HomePage: FunctionComponent = () => {
               frameDivAlignSelf="unset"
             />
           </div>
-          <div
-            className="relative w-[1200px] h-[138px]"
-            // style={frameDiv78Style}
-          >
+          <div className="relative w-[1200px] h-[138px]">
             <Property1Frame480956162
               image10="/image-101@2x.png"
               vector583="/vector-5832.svg"
@@ -623,10 +566,7 @@ const HomePage: FunctionComponent = () => {
               frameDivAlignSelf="unset"
             />
           </div>
-          <div
-            className="relative w-[1200px] h-[138px]"
-            // style={frameDiv79Style}
-          >
+          <div className="relative w-[1200px] h-[138px]">
             <Property1Frame480956162
               image10="/image-101@2x.png"
               vector583="/vector-5832.svg"

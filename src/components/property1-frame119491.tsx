@@ -40,7 +40,8 @@ const Property1Frame119491: FunctionComponent<Property1Frame119491Type> = memo(
             <img
               className="relative w-[7.06px] h-[12.71px]"
               alt=""
-              src={vector10}
+              // src={vector10}
+              src="../../public/vector-10.svg"
             />
           </div>
         </div>

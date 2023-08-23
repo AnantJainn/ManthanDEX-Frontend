@@ -11,10 +11,16 @@ const ContainerCardFormFilter: FunctionComponent = memo(() => {
     <section className="relative container-card-form-filter">
       <div className="container-card-form-filter-content">
         <section className="absolute top-[101.81rem] w-[100%] h-[36.25rem] text-center text-[2.5rem] text-darkturquoise font-bai-jamjuree">
-          <div className="absolute top-[-0.06rem] left-[7.5rem] rounded-11xl bg-midnightblue-400 w-[75rem] flex flex-col items-start justify-start">
+          <div
+            className="absolute top-[-0.06rem] left-[7.5rem] rounded-11xl bg-midnightblue-400 w-[75rem] flex flex-col items-start justify-start"
+            style={{ marginLeft: "7rem" }}
+          >
             <div className="self-stretch my-0 mx-[!important] absolute top-[3.75rem] left-[0rem] flex flex-col items-center justify-start z-[0]">
               <div className="self-stretch flex flex-col items-start justify-start">
-                <div className="self-stretch flex flex-col items-start justify-start gap-[5rem]">
+                <div
+                  className="self-stretch flex flex-col items-start justify-start gap-[5rem]"
+                  // style={{ marginLeft: "7rem" }}
+                >
                   <div className="self-stretch flex flex-col items-center justify-start gap-[1rem]">
                     <b className="self-stretch relative">Why Manthan DEX</b>
                     <div className="self-stretch relative text-[1rem] tracking-[0.05em] font-light text-gainsboro-300">
