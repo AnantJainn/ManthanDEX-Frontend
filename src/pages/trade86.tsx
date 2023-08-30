@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useCallback, useState } from "react";
 // import { FunctionComponent, useCallback } from "react";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+// import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Property1Variant3 from "../components/property1-variant3";
 import BellPinLight from "../components/bell-pin-light";
 import ContainerCard from "../components/container-card";
@@ -9,11 +9,21 @@ import Property1Group48095502 from "../components/property1-group48095502";
 import Property1Frame48095537 from "../components/property1-frame48095537";
 import Property1POSITION from "../components/property1-p-o-s-i-t-i-o-n";
 import BtcUsd from "../components/BtcUsd"
+// import { Notification } from "../components/notification";
+import { Notification } from "../components/notification";
+import Wallet from "../components/Wallet"
+import ConectWallet from "./ConnectWallet";
+
 
 const Trade86: React.FC = () => {
   const [isContentVisible, setIsContentVisible] = useState(false);
+  const [isNotiVisible, setIsNotiVisible] = useState(false);
+  const [isWalletPopupVisible, setIsWalletPopupVisible] = useState(false); // Added state for wallet popup
 
   const handleToggleContent = () => {
+    setIsNotiVisible(prevState => !prevState);
+  };
+  const handleToggleNoti = () => {
     setIsContentVisible(prevState => !prevState);
   };
   const onFrameLink1Click = useCallback(() => {
@@ -32,8 +42,16 @@ const Trade86: React.FC = () => {
     // Please sync "Trade 85" to the project
   }, []);
 
+  const openWalletPopup = () => {
+    setIsWalletPopupVisible(true);
+  };
+
+  const closeWalletPopup = () => {
+    setIsWalletPopupVisible(false);
+  };
+
   return (
-    <div className="overflow-hidden bg-[#0c1326] flex flex-col" id="TradeRoot">
+    <div className="overflow-hidden bg-[#0c1326] flex flex-col" id="TradeRoot" >
       <div className="shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.1)] bg-[#000921] flex flex-col justify-end mb-4 h-10 shrink-0 px-10 py-1">
         <div className="bg-[#000921] flex flex-row justify-between mr-1 items-center">
           <div className="flex flex-row gap-10 items-start">
@@ -52,20 +70,26 @@ const Trade86: React.FC = () => {
             </div>
           </div>
           <div className="self-start flex flex-row justify-between gap-3 items-center">
-            {/* <button
-              className="border-solid border-[#191235] bg-[#06e7ed] self-start flex flex-col w-32 shrink-0 h-8 items-center py-2 border-0 rounded-lg"
-              id="Button1"
-            >
-              <div className="text-sm font-['Bai_Jamjuree'] font-medium capitalize text-[#191235]">
-                Connect Wallet
-              </div>
+            {/* <button className="bg-black text-white rounded-lg px-4 py-2 hover:cursor-pointer">
+              Connect Wallet
             </button> */}
-            <ConnectButton />
+            <button
+              className="bg-black text-white rounded-lg px-4 py-2 hover:cursor-pointer"
+              onClick={openWalletPopup} // Add onClick handler to open the wallet popup
+              // onClick={closeWalletPopup}
+            >
+              Connect Wallet
+            </button>
+            {/* {isWalletPopupVisible && <ConectWallet />} */}
+
+
             <img
               src="https://file.rendit.io/n/fYJujTHtYaG9lWFAbGqI.svg"
               className="w-6 shrink-0"
               id="Bellpinlight"
+              onClick={handleToggleNoti}
             />
+            {isNotiVisible && <Notification />}
             <button
               className="border-solid border-[#f41212] flex flex-row gap-2 w-12 shrink-0 h-6 items-center px-1 border-0 rounded-lg bg-black"
               id="SignUpButton"
@@ -84,6 +108,12 @@ const Trade86: React.FC = () => {
           </div>
         </div>
       </div>
+      {isWalletPopupVisible && (
+        <div className="left-[60rem] top-[-20rem] fixed inset-0 flex items-center justify-center bg-black bg-opacity-10" onClick={closeWalletPopup}>
+          <ConectWallet />
+        </div>
+      )}
+      {/* {isWalletPopupVisible && <ConectWallet />} */}
       <div className="flex flex-row gap-8 items-start mx-3 justify-center">
         {" "}
         {/* Added justify-end to shift the content to the right */}
@@ -1491,11 +1521,10 @@ const Trade86: React.FC = () => {
           id="Text1"
         >
           Powered by TIMECHAINLABS
-          {/* <btcusd /> */}
         </div>
       </div>
-
     </div>
+
   );
 };
 
