@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import HomePage from "./components/home-page";
 import Trade86 from "./pages/trade86";
+import { Portfolio } from "./pages/portfolio";
 import { useEffect } from "react";
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/trade-86" element={<Trade86 />} />
+      <Route path="/portfolio" element={<Portfolio />} />
     </Routes>
   );
 }

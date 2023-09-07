@@ -1,6 +1,10 @@
-import { FunctionComponent, memo } from "react";
-
+import { FunctionComponent, memo, useState } from "react";
+import { Frame } from "./notifications";
 const Header: FunctionComponent = memo(() => {
+  const [popupVisible, setPopupVisible] = useState(false);
+  const handleButtonClick = () => {
+    setPopupVisible(!popupVisible);
+  };
   return (
     <header className="absolute top-[0rem] left-[0rem] w-[100%] flex flex-col items-center justify-center">
       <div className="self-stretch overflow-hidden flex flex-col py-[1rem] px-[5.5rem] items-center justify-center z-[0]">
@@ -32,11 +36,32 @@ const Header: FunctionComponent = memo(() => {
               className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-start gap-[0.75rem]"
               autoFocus
             >
-              <img
-                className="relative w-[1.5rem] h-[1.5rem]"
-                alt=""
-                src="/bell-pin-light2.svg"
-              />
+              {/* <button
+                className="cursor-pointer py-[0.5rem] px-[0.75rem] bg-[transparent] rounded-21xl box-border w-[3.25rem] h-[1.5rem] flex flex-row items-center justify-center border-[0.5px] border-solid border-gainsboro-100"
+                autoFocus
+              >
+                <img
+                  className="relative w-[1.5rem] h-[1.5rem]"
+                  alt=""
+                  src="/bell-pin-light2.svg"
+                />
+              </button> */}
+              <div>
+                <button
+                  className="cursor-pointer py-[0.5rem] px-[0.75rem] bg-[transparent] rounded-21xl box-border w-[3.25rem] h-[1.5rem] flex flex-row items-center justify-center border-[0.5px] border-solid border-gainsboro-100"
+                  autoFocus
+                  onClick={handleButtonClick}
+                >
+                  <img
+                    className="relative w-[1.5rem] h-[1.5rem]"
+                    alt=""
+                    src="/bell-pin-light2.svg"
+                  />
+                </button>
+
+                {popupVisible && <Frame />}
+              </div>
+
               <button
                 className="cursor-pointer py-[0.5rem] px-[0.75rem] bg-[transparent] rounded-21xl box-border w-[3.25rem] h-[1.5rem] flex flex-row items-center justify-center border-[0.5px] border-solid border-gainsboro-100"
                 autoFocus

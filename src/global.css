@@ -75,7 +75,840 @@ body {
     justify-content: center;
   }
 }
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  height: 20px;
+  position: relative;
+}
+
+.frame .TRADE {
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.frame .text-wrapper {
+  color: #28075e;
+  font-family: "Bai Jamjuree-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.frame .rectangle {
+  align-self: stretch;
+  background: linear-gradient(
+    180deg,
+    rgb(84, 58, 132) 0%,
+    rgb(156, 118, 235) 51.56%,
+    rgb(138, 183, 253) 100%
+  );
+  border-radius: 3px;
+  height: 2px;
+  position: relative;
+  width: 100%;
+}
+
+.frame .default {
+  color: #543a83;
+  font-family: "Bai Jamjuree-Regular", Helvetica;
+  font-weight: 400;
+}
+
+.frame .variant-3 {
+  color: #543a83;
+  font-family: "Bai Jamjuree-Regular", Helvetica;
+  font-weight: 400;
+}
+
+.frame .variant-2 {
+  color: #28075e;
+  font-family: "Bai Jamjuree-Medium", Helvetica;
+  font-weight: 500;
+}
+.trade {
+  background-color: #0c1326;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.trade .div-2 {
+  background-color: #0c1326;
+  height: 1010px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.trade .footer {
+  background-color: transparent;
+  height: 39px;
+  left: 0;
+  position: absolute;
+  top: 971px;
+  width: 1442px;
+}
+
+.trade .overlap-group-2 {
+  background-color: #000f37;
+  box-shadow: -2px 0px 4px #0000001a;
+  height: 39px;
+  position: relative;
+  width: 1440px;
+}
+
+.trade .text {
+  color: var(--controlsneutral-control-layer-color50);
+  font-family: "Work Sans-Regular", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  left: 1243px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 16px;
+  white-space: nowrap;
+}
+
+.trade .top-navigation {
+  background-color: #000920;
+  box-shadow: 0px 4px 4px #0000001a;
+  height: 60px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.trade .frame-15 {
+  align-items: center;
+  background-color: #000920;
+  display: flex;
+  justify-content: space-between;
+  left: 60px;
+  position: relative;
+  top: 20px;
+  width: 1308px;
+}
+
+.trade .frame-16 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 39px;
+  position: relative;
+}
+
+.trade .group-2 {
+  height: 32px;
+  position: relative;
+  width: 48.19px;
+}
+
+.trade .frame-17 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 60px;
+  position: relative;
+}
+
+.trade .frame-13004 {
+  color: #e5e7eb !important;
+  margin-left: unset !important;
+  margin-right: unset !important;
+}
+
+.trade .frame-instance {
+  flex: 0 0 auto !important;
+}
+
+.trade .frame-13003-instance {
+  color: #ffffff !important;
+}
+
+.trade .frame-18 {
+  background: unset !important;
+  background-color: #66c8ff !important;
+}
+
+.trade .frame-19 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 12px;
+  position: relative;
+}
+
+.trade .metamask-fox {
+  height: 24px;
+  object-fit: cover;
+  position: relative;
+  width: 24px;
+}
+
+.trade .design-component-instance-node-2 {
+  position: relative !important;
+}
+
+.trade .bell-pin-light-instance {
+  background-color: #e55555 !important;
+}
+
+.trade .sign-up-button {
+  align-items: center;
+  border: 0.5px solid;
+  border-color: #e4e4e4;
+  border-radius: 40px;
+  display: flex;
+  gap: 16px;
+  height: 24px;
+  justify-content: center;
+  padding: 8px 12px;
+  position: relative;
+  width: 52px;
+}
+
+.trade .frame-20 {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -4px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -4px;
+  padding: 0px 4px;
+  position: relative;
+  width: 48px;
+}
+
+.trade .icon-instance-node {
+  height: 16px !important;
+  position: relative !important;
+  width: 16px !important;
+}
+
+.trade .current-value {
+  height: 321px;
+  left: 240px;
+  position: absolute;
+  top: 120px;
+  width: 235px;
+}
+
+.trade .overlap {
+  height: 321px;
+  position: relative;
+}
+
+.trade .rectangle-2 {
+  background-color: #092879;
+  border-radius: 13px 0px 0px 13px;
+  height: 235px;
+  left: 37px;
+  position: absolute;
+  top: -37px;
+  transform: rotate(90deg);
+  width: 160px;
+}
+
+.trade .frame-wrapper {
+  height: 321px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 235px;
+}
+
+.trade .frame-21 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.trade .overlap-group-wrapper {
+  height: 321px;
+  position: relative;
+  width: 235px;
+}
+
+.trade .overlap-group-3 {
+  border-radius: 13px;
+  height: 321px;
+  position: relative;
+}
+
+.trade .line {
+  height: 1px;
+  left: 9px;
+  position: absolute;
+  top: 161px;
+  width: 217px;
+}
+
+.trade .rectangle-3 {
+  border: 0.25px solid;
+  border-color: #ffffff;
+  border-radius: 13px;
+  height: 321px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 235px;
+}
+
+.trade .frame-22 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 28px;
+  left: 25px;
+  position: absolute;
+  top: 16px;
+}
+
+.trade .text-wrapper-3 {
+  color: #e4e4e4;
+  font-family: "Bai Jamjuree-Bold", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.trade .frame-23 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.trade .frame-24 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 19px;
+  position: relative;
+}
+
+.trade .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Bai Jamjuree-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.trade .frame-25 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  position: relative;
+}
+
+.trade .element-6 {
+  color: #55c793;
+  font-family: "Oxygen-Light", Helvetica;
+  font-size: 14px;
+  font-weight: 300;
+  height: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: 48px;
+}
+
+.trade .down-instance {
+  height: 14px !important;
+  position: relative !important;
+  width: 14px !important;
+}
+
+.trade .frame-26 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  position: relative;
+}
+
+.trade .element-7 {
+  color: #ffffff;
+  font-family: "Work Sans-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.trade .bitcoin-4 {
+  color: #e4e4e4;
+  font-family: "Work Sans-Light", Helvetica;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  opacity: 0.4;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.trade .overlap-wrapper {
+  height: 321px;
+  left: 531px;
+  position: absolute;
+  top: 120px;
+  width: 791px;
+}
+
+.trade .stroke {
+  background-color: #000920;
+  border-radius: 13px;
+  height: 321px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 789px;
+}
+
+.trade .frame-27 {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 16px;
+  left: 71px;
+  position: absolute;
+  top: 10px;
+}
+
+.trade .frame-28 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 40px;
+}
+
+.trade .text-wrapper-5 {
+  color: #22ccc4;
+  font-family: "Bai Jamjuree-Regular", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.trade .rectangle-wrapper {
+  background-color: #2b2b36;
+  border-radius: 4px;
+  height: 260px;
+  position: relative;
+  width: 8px;
+}
+
+.trade .rectangle-4 {
+  background-color: #22ccc4;
+  border-radius: 4px 4px 0px 0px;
+  height: 102px;
+  position: relative;
+  top: 28px;
+}
+
+.trade .text-wrapper-6 {
+  color: #ffffff;
+  font-family: "Bai Jamjuree-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.trade .img-wrapper {
+  background-color: #2b2b36;
+  border-radius: 4px;
+  height: 260px;
+  position: relative;
+  width: 7.76px;
+}
+
+.trade .rectangle-5 {
+  height: 32px;
+  left: 0;
+  position: absolute;
+  top: 98px;
+  width: 7px;
+}
+
+.trade .group-3 {
+  background-color: #2b2b36;
+  border-radius: 4px;
+  height: 260px;
+  position: relative;
+  width: 8px;
+}
+
+.trade .rectangle-6 {
+  background-color: #22ccc4;
+  border-radius: 4px 4px 0px 0px;
+  height: 66px;
+  position: relative;
+  top: 64px;
+  width: 8px;
+}
+
+.trade .text-wrapper-7 {
+  color: #be3c5b;
+  font-family: "Bai Jamjuree-Regular", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.trade .rectangle-7 {
+  background-color: #be3c5b;
+  border-radius: 0px 0px 4px 4px;
+  height: 72px;
+  position: relative;
+  top: 130px;
+}
+
+.trade .group-4 {
+  background-color: #2b2b36;
+  border-radius: 4px;
+  height: 259.39px;
+  position: relative;
+  width: 7.99px;
+}
+
+.trade .rectangle-8 {
+  background-color: #22ccc4;
+  border-radius: 4px 4px 0px 0px;
+  height: 90px;
+  position: relative;
+  top: 39px;
+  width: 8px;
+}
+
+.trade .rectangle-9 {
+  background-color: #be3c5b;
+  border-radius: 0px 0px 4px 4px;
+  height: 30px;
+  position: relative;
+  top: 130px;
+  width: 8px;
+}
+
+.trade .line-2 {
+  height: 1px;
+  left: 48px;
+  position: absolute;
+  top: 160px;
+  width: 743px;
+}
+
+.trade .group-5 {
+  height: 403px;
+  left: 240px;
+  position: absolute;
+  top: 485px;
+  width: 1080px;
+}
+
+.trade .overlap-2 {
+  height: 403px;
+  position: relative;
+}
+
+.trade .frame-29 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 21px;
+  left: 0;
+  position: absolute;
+  top: 55px;
+}
+
+.trade .frame-30 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 1080px;
+}
+
+.trade .group-6 {
+  height: 403px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1080px;
+}
+
+.trade .button-14 {
+  border-radius: 13px 13px 0px 0px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.trade .button-instance {
+  color: #ffffff !important;
+  margin-top: unset !important;
+}
+
+.trade .button-14-instance {
+  flex: 0 0 auto !important;
+  justify-content: center !important;
+  margin-bottom: -2px !important;
+  margin-top: -2px !important;
+}
+
+.trade .rectangle-10 {
+  border: 0.25px solid;
+  border-color: #ffffff;
+  border-radius: 0px 13px 13px 13px;
+  height: 371px;
+  left: 0;
+  position: absolute;
+  top: 32px;
+  width: 1080px;
+}
+
+.trade .group-7 {
+  height: 909px;
+  left: 0;
+  position: absolute;
+  top: 60px;
+  width: 78px;
+}
+
+.trade .overlap-3 {
+  background-color: #000920;
+  height: 909px;
+  width: 60px;
+}
+
+.trade .frame-32 {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  top: 60px;
+}
+.expand-down-light-screen {
+  height: 16px;
+  position: relative;
+  width: 16px;
+}
+
+.expand-down-light-screen .vector {
+  height: 5px;
+  left: 4px;
+  position: absolute;
+  top: 6px;
+  width: 9px;
+}
+.frame {
+  border-radius: 13px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  padding: 12px;
+  position: relative;
+}
+
+.frame .div {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 220px;
+}
+
+.frame .div-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 12px;
+  position: relative;
+}
+
+.frame .icons-crypto-bitcoin {
+  height: 22px !important;
+  position: relative !important;
+  width: 22px !important;
+}
+
+.frame .icons-crypto-ethereum-o {
+  height: 18px !important;
+  left: 6px !important;
+  width: 11px !important;
+}
+
+/* .frame .class {
+  background-image: url(./image.svg) !important;
+  height: 22px !important;
+} */
+/* 
+.frame .class-2 {
+  background-image: url(./fill-504-2.svg) !important;
+  height: 22px !important;
+} */
+
+.frame .div-3 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.frame .BTC {
+  color: #ffffff;
+  font-family: "Bai Jamjuree-Light", Helvetica;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.frame .bitcoin {
+  color: #ffffff;
+  font-family: "Work Sans-Light", Helvetica;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  opacity: 0.4;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame .element {
+  color: #ffffff;
+  font-family: "Bai Jamjuree-Regular", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: right;
+  width: fit-content;
+}
+
+.frame .div-4 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  position: relative;
+}
+
+.frame .text-wrapper {
+  color: #55c793;
+  font-family: "Work Sans-Regular", Helvetica;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame .icons-down {
+  height: 11px !important;
+  position: relative !important;
+  width: 11px !important;
+}
+
+.frame .group {
+  height: 32.7px;
+  margin-bottom: -0.35px;
+  position: relative;
+  width: 220px;
+}
+
+.frame.default {
+  align-items: flex-start;
+  background-color: #000f37;
+}
+
+.frame.variant-3 {
+  align-items: flex-end;
+  background-color: #000f37;
+}
+
+.frame.hovered {
+  align-items: flex-start;
+  background-color: #000920;
+}
+.icons-down {
+  height: 14px;
+  position: relative;
+  width: 14px;
+}
+
+.icons-down .shape {
+  height: 14px;
+  left: 2px;
+  position: absolute;
+  top: 0;
+  width: 10px;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap");
-

@@ -8,23 +8,22 @@ import DeviderIcon from "../components/devider-icon";
 import Property1Group48095502 from "../components/property1-group48095502";
 import Property1Frame48095537 from "../components/property1-frame48095537";
 import Property1POSITION from "../components/property1-p-o-s-i-t-i-o-n";
-import BtcUsd from "../components/BtcUsd"
+import BtcUsd from "../components/BtcUsd";
 // import { Notification } from "../components/notification";
 import { Notification } from "../components/notification";
-import Wallet from "../components/Wallet"
+import Wallet from "../components/Wallet";
 import ConectWallet from "./ConnectWallet";
-
-
+import { Portfolio } from "./portfolio";
 const Trade86: React.FC = () => {
   const [isContentVisible, setIsContentVisible] = useState(false);
   const [isNotiVisible, setIsNotiVisible] = useState(false);
   const [isWalletPopupVisible, setIsWalletPopupVisible] = useState(false); // Added state for wallet popup
 
   const handleToggleContent = () => {
-    setIsNotiVisible(prevState => !prevState);
+    setIsNotiVisible((prevState) => !prevState);
   };
   const handleToggleNoti = () => {
-    setIsContentVisible(prevState => !prevState);
+    setIsContentVisible((prevState) => !prevState);
   };
   const onFrameLink1Click = useCallback(() => {
     // Please sync "Trade 67" to the project
@@ -51,7 +50,7 @@ const Trade86: React.FC = () => {
   };
 
   return (
-    <div className="overflow-hidden bg-[#0c1326] flex flex-col" id="TradeRoot" >
+    <div className="overflow-hidden bg-[#0c1326] flex flex-col" id="TradeRoot">
       <div className="shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.1)] bg-[#000921] flex flex-col justify-end mb-4 h-10 shrink-0 px-10 py-1">
         <div className="bg-[#000921] flex flex-row justify-between mr-1 items-center">
           <div className="flex flex-row gap-10 items-start">
@@ -62,12 +61,22 @@ const Trade86: React.FC = () => {
             <div className="text-sm font-['Bai_Jamjuree'] font-semibold uppercase text-[#5181ff] mt-1 mr-5">
               TRADE
             </div>
-            <div
-              className="text-sm font-['Bai_Jamjuree'] font-light uppercase text-[#e5e7eb] mt-1"
+            <a href="/portfolio">
+              <div
+                className="text-sm font-['Bai_Jamjuree'] font-light uppercase text-[#e5e7eb] mt-1"
+                id="PROFILE"
+              >
+                PORTFOLIO
+              </div>
+            </a>
+
+            {/* <a
+              href="/portfolio"
+              className="text-sm font-Bai_Jamjuree font-light uppercase text-#e5e7eb mt-1"
               id="PROFILE"
             >
               PORTFOLIO
-            </div>
+            </a> */}
           </div>
           <div className="self-start flex flex-row justify-between gap-3 items-center">
             {/* <button className="bg-black text-white rounded-lg px-4 py-2 hover:cursor-pointer">
@@ -81,7 +90,6 @@ const Trade86: React.FC = () => {
               Connect Wallet
             </button>
             {/* {isWalletPopupVisible && <ConectWallet />} */}
-
 
             <img
               src="https://file.rendit.io/n/fYJujTHtYaG9lWFAbGqI.svg"
@@ -109,7 +117,10 @@ const Trade86: React.FC = () => {
         </div>
       </div>
       {isWalletPopupVisible && (
-        <div className="left-[60rem] top-[-20rem] fixed inset-0 flex items-center justify-center bg-black bg-opacity-10" onClick={closeWalletPopup}>
+        <div
+          className="left-[60rem] top-[-20rem] fixed inset-0 flex items-center justify-center bg-black bg-opacity-10"
+          onClick={closeWalletPopup}
+        >
           <ConectWallet />
         </div>
       )}
@@ -462,14 +473,12 @@ const Trade86: React.FC = () => {
             <div className="flex flex-row mr-20 gap-5 items-center">
               <div
                 className="bg-[#092879] self-start flex flex-row justify-end mr-3 gap-6 h-10 items-center pl-4 pr-2 py-3 rounded-tl-lg rounded-bl-lg"
-              // Replace handleClick with the actual function you want to execute
+                // Replace handleClick with the actual function you want to execute
               >
-
                 <img
                   src="https://file.rendit.io/n/sMf1sTOFanuIGYJDnuiO.svg"
                   className="mr-[-10] w-8 shrink-0"
                   id="BTC"
-
                 />
 
                 <div className="flex flex-col gap-0 w-12 shrink-0 items-start">
@@ -539,207 +548,209 @@ const Trade86: React.FC = () => {
                 className="border-solid border-[#0c1326] flex flex-col border-0"
                 id="Cardtypes"
               >
-                {!isContentVisible && <div className="bg-[#000a25] flex flex-col gap-px items-end mx-0 pt-3 pb-2 px-px rounded-lg">
-                  <div className="self-stretch flex flex-row justify-between items-start mb-1 ml-4 mr-5">
-                    <div className="flex flex-row w-1/2 items-start">
-                      <div className="overflow-hidden bg-[#010c29] flex flex-col w-12 shrink-0 h-6 items-center py-1 rounded-tl rounded-bl">
-                        <div
-                          className="text-center text-xs font-['Bai_Jamjuree'] font-medium leading-[16px] text-white"
-                          id="Roboto"
-                        >
-                          30 m
+                {!isContentVisible && (
+                  <div className="bg-[#000a25] flex flex-col gap-px items-end mx-0 pt-3 pb-2 px-px rounded-lg">
+                    <div className="self-stretch flex flex-row justify-between items-start mb-1 ml-4 mr-5">
+                      <div className="flex flex-row w-1/2 items-start">
+                        <div className="overflow-hidden bg-[#010c29] flex flex-col w-12 shrink-0 h-6 items-center py-1 rounded-tl rounded-bl">
+                          <div
+                            className="text-center text-xs font-['Bai_Jamjuree'] font-medium leading-[16px] text-white"
+                            id="Roboto"
+                          >
+                            30 m
+                          </div>
+                        </div>
+                        <div className="bg-[#443b78] w-px shrink-0 h-6" />
+                        <div className="overflow-hidden bg-[#010c29] flex flex-col w-8 shrink-0 items-center px-2 py-px">
+                          <img
+                            src="https://file.rendit.io/n/NStHsb9vd0DN0fctsGMT.svg"
+                            className="w-5"
+                            id="Filter"
+                          />
+                        </div>
+                        <div className="bg-[#443b78] w-px shrink-0 h-6" />
+                        <div className="overflow-hidden bg-[#010c29] flex flex-col w-20 shrink-0 h-6 items-center py-1">
+                          <div
+                            className="text-center text-xs font-['Bai_Jamjuree'] font-medium leading-[16px] text-white/40"
+                            id="Roboto1"
+                          >
+                            fx Indicators
+                          </div>
+                        </div>
+                        <div className="bg-[#443b78] w-px shrink-0 h-6" />
+                        <div className="relative flex flex-col w-16 shrink-0 items-end">
+                          <div className="w-16 h-6 overflow-hidden bg-[#010c29] absolute top-0 left-0 flex flex-row gap-4 items-center px-2">
+                            <img
+                              src="https://file.rendit.io/n/vpDgCQHGHCRZRwnjUx7x.svg"
+                              className="w-4 shrink-0"
+                            />
+                            <img
+                              src="https://file.rendit.io/n/t6nbT1wm7VvhLiQKQXVI.svg"
+                              className="w-4 shrink-0"
+                            />
+                          </div>
+                          <div className="bg-[#443b78] relative w-px h-6 shrink-0" />
+                        </div>
+                        <div className="overflow-hidden bg-[#010c29] flex flex-col w-8 shrink-0 h-6 items-center py-1">
+                          <div
+                            className="text-center text-xs font-['Bai_Jamjuree'] font-medium leading-[16px] text-white/40"
+                            id="Roboto2"
+                          >
+                            BID
+                          </div>
+                        </div>
+                        <div className="bg-[#443b78] w-px shrink-0 h-6" />
+                        <div className="overflow-hidden bg-[#010c29] flex flex-col w-10 shrink-0 h-6 items-center py-1">
+                          <div
+                            className="text-center text-xs font-['Bai_Jamjuree'] font-medium leading-[16px] text-white/40"
+                            id="Roboto3"
+                          >
+                            MID
+                          </div>
+                        </div>
+                        <div className="bg-[#443b78] w-px shrink-0 h-6" />
+                        <div className="overflow-hidden bg-[#010c29] flex flex-col w-10 shrink-0 h-6 items-center py-1 rounded-tr rounded-br">
+                          <div
+                            className="text-center text-xs font-['Bai_Jamjuree'] font-medium leading-[16px] text-white/40"
+                            id="Roboto4"
+                          >
+                            ASK
+                          </div>
                         </div>
                       </div>
-                      <div className="bg-[#443b78] w-px shrink-0 h-6" />
-                      <div className="overflow-hidden bg-[#010c29] flex flex-col w-8 shrink-0 items-center px-2 py-px">
+                      <img
+                        src="https://file.rendit.io/n/nyRnRGQbTabYhIn8poWz.svg"
+                        className="mt-1 w-4 shrink-0"
+                        id="Fullscreen"
+                      />
+                    </div>
+                    <div className="self-start flex flex-row gap-2 items-start mb-6 ml-4">
+                      <img
+                        src="https://file.rendit.io/n/F3A5bqExmBOMYLhBROSD.svg"
+                        className="w-6 shrink-0"
+                        id="Tradingview"
+                      />
+                      <div className="flex flex-row mr-2 gap-1 w-12 shrink-0 items-start">
+                        <div className="text-xs font-['Work_Sans'] tracking-[0.1] leading-[22px] text-[#76809d] w-1/6">
+                          O
+                        </div>
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#28c59f] mt-px">
+                          4011.90
+                        </div>
+                      </div>
+                      <div className="flex flex-row mr-2 gap-1 w-12 shrink-0 items-start">
+                        <div className="text-xs font-['Work_Sans'] tracking-[0.1] leading-[22px] text-[#76809d] w-1/6">
+                          H
+                        </div>
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#28c59f] mt-px">
+                          4011.90
+                        </div>
+                      </div>
+                      <div className="flex flex-row mr-2 gap-1 w-12 shrink-0 items-start">
+                        <div className="text-xs font-['Work_Sans'] tracking-[0.1] leading-[22px] text-[#76809d] w-1/6">
+                          L
+                        </div>
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#28c59f] mt-px">
+                          4011.90
+                        </div>
+                      </div>
+                      <div className="flex flex-row gap-1 w-12 shrink-0 items-start">
+                        <div className="text-xs font-['Work_Sans'] tracking-[0.1] leading-[22px] text-[#76809d] w-1/6">
+                          C
+                        </div>
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#28c59f] mt-px">
+                          4011.90
+                        </div>
+                      </div>
+                    </div>
+                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68] mb-3 mr-5">
+                      4150.0
+                    </div>
+                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68] mb-2 mr-5">
+                      4125.0
+                    </div>
+                    <div className="self-stretch flex flex-row mr-4 gap-4 items-start">
+                      <div className="relative flex flex-col w-[690px] pt-24 pb-56">
                         <img
-                          src="https://file.rendit.io/n/NStHsb9vd0DN0fctsGMT.svg"
-                          className="w-5"
-                          id="Filter"
+                          src="https://file.rendit.io/n/9CcMkERmN5JDne3Mf3cX.svg"
+                          className="w-[592px] h-[324px] absolute top-px left-4"
+                        />
+                        <img
+                          src="https://file.rendit.io/n/0938srI0yCajz01B5tlj.svg"
+                          className="w-[587px] h-[298px] absolute top-0 left-4"
+                        />
+                        <div
+                          className="border-solid border-[rgba(225,_227,_231,_0.6)] relative h-0 shrink-0 border-0"
+                          id="Devider"
                         />
                       </div>
-                      <div className="bg-[#443b78] w-px shrink-0 h-6" />
-                      <div className="overflow-hidden bg-[#010c29] flex flex-col w-20 shrink-0 h-6 items-center py-1">
-                        <div
-                          className="text-center text-xs font-['Bai_Jamjuree'] font-medium leading-[16px] text-white/40"
-                          id="Roboto1"
-                        >
-                          fx Indicators
+                      <div className="flex flex-col justify-between mt-2 w-10 shrink-0 h-[304px] items-start">
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
+                          4100.0
                         </div>
-                      </div>
-                      <div className="bg-[#443b78] w-px shrink-0 h-6" />
-                      <div className="relative flex flex-col w-16 shrink-0 items-end">
-                        <div className="w-16 h-6 overflow-hidden bg-[#010c29] absolute top-0 left-0 flex flex-row gap-4 items-center px-2">
-                          <img
-                            src="https://file.rendit.io/n/vpDgCQHGHCRZRwnjUx7x.svg"
-                            className="w-4 shrink-0"
-                          />
-                          <img
-                            src="https://file.rendit.io/n/t6nbT1wm7VvhLiQKQXVI.svg"
-                            className="w-4 shrink-0"
-                          />
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
+                          4075.0
                         </div>
-                        <div className="bg-[#443b78] relative w-px h-6 shrink-0" />
-                      </div>
-                      <div className="overflow-hidden bg-[#010c29] flex flex-col w-8 shrink-0 h-6 items-center py-1">
-                        <div
-                          className="text-center text-xs font-['Bai_Jamjuree'] font-medium leading-[16px] text-white/40"
-                          id="Roboto2"
-                        >
-                          BID
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
+                          4050.0
                         </div>
-                      </div>
-                      <div className="bg-[#443b78] w-px shrink-0 h-6" />
-                      <div className="overflow-hidden bg-[#010c29] flex flex-col w-10 shrink-0 h-6 items-center py-1">
-                        <div
-                          className="text-center text-xs font-['Bai_Jamjuree'] font-medium leading-[16px] text-white/40"
-                          id="Roboto3"
-                        >
-                          MID
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
+                          4025.0
                         </div>
-                      </div>
-                      <div className="bg-[#443b78] w-px shrink-0 h-6" />
-                      <div className="overflow-hidden bg-[#010c29] flex flex-col w-10 shrink-0 h-6 items-center py-1 rounded-tr rounded-br">
-                        <div
-                          className="text-center text-xs font-['Bai_Jamjuree'] font-medium leading-[16px] text-white/40"
-                          id="Roboto4"
-                        >
-                          ASK
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
+                          4000.0
+                        </div>
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
+                          3975.0
+                        </div>
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
+                          3950.0
+                        </div>
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
+                          3925.0
+                        </div>
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
+                          3900.0
+                        </div>
+                        <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
+                          3875.0
                         </div>
                       </div>
                     </div>
-                    <img
-                      src="https://file.rendit.io/n/nyRnRGQbTabYhIn8poWz.svg"
-                      className="mt-1 w-4 shrink-0"
-                      id="Fullscreen"
-                    />
-                  </div>
-                  <div className="self-start flex flex-row gap-2 items-start mb-6 ml-4">
-                    <img
-                      src="https://file.rendit.io/n/F3A5bqExmBOMYLhBROSD.svg"
-                      className="w-6 shrink-0"
-                      id="Tradingview"
-                    />
-                    <div className="flex flex-row mr-2 gap-1 w-12 shrink-0 items-start">
-                      <div className="text-xs font-['Work_Sans'] tracking-[0.1] leading-[22px] text-[#76809d] w-1/6">
-                        O
-                      </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#28c59f] mt-px">
-                        4011.90
-                      </div>
+                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68] mb-4 mr-4">
+                      3850.0
                     </div>
-                    <div className="flex flex-row mr-2 gap-1 w-12 shrink-0 items-start">
-                      <div className="text-xs font-['Work_Sans'] tracking-[0.1] leading-[22px] text-[#76809d] w-1/6">
-                        H
+                    <div className="self-stretch flex flex-row gap-16 items-start ml-4 mr-12">
+                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-px">
+                        13
                       </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#28c59f] mt-px">
-                        4011.90
+                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-px">
+                        14
                       </div>
-                    </div>
-                    <div className="flex flex-row mr-2 gap-1 w-12 shrink-0 items-start">
-                      <div className="text-xs font-['Work_Sans'] tracking-[0.1] leading-[22px] text-[#76809d] w-1/6">
-                        L
+                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-1">
+                        15
                       </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#28c59f] mt-px">
-                        4011.90
+                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-px">
+                        16
                       </div>
-                    </div>
-                    <div className="flex flex-row gap-1 w-12 shrink-0 items-start">
-                      <div className="text-xs font-['Work_Sans'] tracking-[0.1] leading-[22px] text-[#76809d] w-1/6">
-                        C
+                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-px">
+                        17
                       </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#28c59f] mt-px">
-                        4011.90
+                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-white">
+                        18
+                      </div>
+                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-1">
+                        19
+                      </div>
+                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-px">
+                        20
+                      </div>
+                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-white">
+                        21
                       </div>
                     </div>
                   </div>
-                  <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68] mb-3 mr-5">
-                    4150.0
-                  </div>
-                  <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68] mb-2 mr-5">
-                    4125.0
-                  </div>
-                  <div className="self-stretch flex flex-row mr-4 gap-4 items-start">
-                    <div className="relative flex flex-col w-[690px] pt-24 pb-56">
-                      <img
-                        src="https://file.rendit.io/n/9CcMkERmN5JDne3Mf3cX.svg"
-                        className="w-[592px] h-[324px] absolute top-px left-4"
-                      />
-                      <img
-                        src="https://file.rendit.io/n/0938srI0yCajz01B5tlj.svg"
-                        className="w-[587px] h-[298px] absolute top-0 left-4"
-                      />
-                      <div
-                        className="border-solid border-[rgba(225,_227,_231,_0.6)] relative h-0 shrink-0 border-0"
-                        id="Devider"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-between mt-2 w-10 shrink-0 h-[304px] items-start">
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
-                        4100.0
-                      </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
-                        4075.0
-                      </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
-                        4050.0
-                      </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
-                        4025.0
-                      </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
-                        4000.0
-                      </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
-                        3975.0
-                      </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
-                        3950.0
-                      </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
-                        3925.0
-                      </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
-                        3900.0
-                      </div>
-                      <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68]">
-                        3875.0
-                      </div>
-                    </div>
-                  </div>
-                  <div className="text-xs font-['Work_Sans'] leading-[16px] text-[#454e68] mb-4 mr-4">
-                    3850.0
-                  </div>
-                  <div className="self-stretch flex flex-row gap-16 items-start ml-4 mr-12">
-                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-px">
-                      13
-                    </div>
-                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-px">
-                      14
-                    </div>
-                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-1">
-                      15
-                    </div>
-                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-px">
-                      16
-                    </div>
-                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-px">
-                      17
-                    </div>
-                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-white">
-                      18
-                    </div>
-                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-1">
-                      19
-                    </div>
-                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-white mr-px">
-                      20
-                    </div>
-                    <div className="text-xs font-['Work_Sans'] leading-[16px] text-white">
-                      21
-                    </div>
-                  </div>
-                </div>}
+                )}
               </div>
             </div>
           </div>
@@ -1524,7 +1535,6 @@ const Trade86: React.FC = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
