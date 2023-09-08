@@ -1,248 +1,3 @@
-// import React from "react";
-// import BellPinLight from "./bell-pin-light";
-// import Button from "./Button";
-// import { DivWrapper } from "./DivWrapper";
-// import { Down } from "./Down";
-// import { ExpandDownLight } from "./ExpandDownLight";
-// import { Frame } from "./Frame";
-// import { Frame48095477 } from "./Frame48095477";
-// import { Frame48095479 } from "./Frame48095479";
-// import { Frame48095497 } from "./Frame48095497";
-// import { Frame48095501 } from "./Frame48095501";
-// import { Frame48095502 } from "./Frame48095502";
-// import { Frame48095503 } from "./Frame48095503";
-// import { PropertyDefaultWrapper } from "./PropertyDefaultWrapper";
-// import { PropertyWrapper } from "./PropertyWrapper";
-// import { Sun } from "./Sun";
-// // import "./style.css";
-// import "../global.css";
-// export const Trade = (): JSX.Element => {
-//   return (
-//     <div className="trade">
-//       <div className="div-2">
-//         <footer className="footer">
-//           <div className="overlap-group-2">
-//             <div className="text">Powered by TIMECHAINLABS</div>
-//           </div>
-//         </footer>
-//         <div className="top-navigation">
-//           <div className="frame-15">
-//             <div className="frame-16">
-//               <img className="group-2" alt="Group" src="group-1.png" />
-//               <div className="frame-17">
-//                 <Frame
-//                   divClassName="frame-13004"
-//                   property1="default"
-//                   text="TRADE"
-//                 />
-//                 <PropertyWrapper
-//                   className="frame-instance"
-//                   divClassName="frame-13003-instance"
-//                   property1="variant-3"
-//                   rectangleClassName="frame-18"
-//                   text="PORTFOLIO"
-//                 />
-//               </div>
-//             </div>
-//             <div className="frame-19">
-//               <img
-//                 className="metamask-fox"
-//                 alt="Metamask fox"
-//                 src="metamask-fox-1.png"
-//               />
-//               <BellPinLight
-//                 className="design-component-instance-node-2"
-//                 ellipse="ellipse-45-3.svg"
-//                 ellipseClassName="bell-pin-light-instance"
-//                 subtract="subtract-3.svg"
-//               />
-//               <div className="sign-up-button">
-//                 <div className="frame-20">
-//                   <Sun className="icon-instance-node" />
-//                   <ExpandDownLight
-//                     className="icon-instance-node"
-//                     color="#E4E4E4"
-//                   />
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="current-value">
-//           <div className="overlap">
-//             <div className="rectangle-2" />
-//             <div className="frame-wrapper">
-//               <div className="frame-21">
-//                 <div className="overlap-group-wrapper">
-//                   <div className="overlap-group-3">
-//                     <img className="line" alt="Line" src="line-48.svg" />
-//                     <div className="rectangle-3" />
-//                   </div>
-//                 </div>
-//                 <div className="frame-22">
-//                   <div className="text-wrapper-3">Current Value</div>
-//                   <div className="frame-23">
-//                     <div className="frame-24">
-//                       <div className="text-wrapper-4">$360.54</div>
-//                       <div className="frame-25">
-//                         <div className="element-6">+4.66%</div>
-//                         <Down className="down-instance" />
-//                       </div>
-//                     </div>
-//                     <div className="frame-26">
-//                       <div className="element-7">$345.95</div>
-//                       <div className="bitcoin-4">(Last week)</div>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="overlap-wrapper">
-//           <div className="overlap">
-//             <div className="stroke" />
-//             <div className="frame-27">
-//               <div className="frame-28">
-//                 <div className="text-wrapper-5">+82.9%</div>
-//                 <div className="rectangle-wrapper">
-//                   <div className="rectangle-4" />
-//                 </div>
-//                 <div className="text-wrapper-6">BTC</div>
-//               </div>
-//               <div className="frame-28">
-//                 <div className="text-wrapper-5">+22.6%</div>
-//                 <div className="img-wrapper">
-//                   <img
-//                     className="rectangle-5"
-//                     alt="Rectangle"
-//                     src="rectangle-180.svg"
-//                   />
-//                 </div>
-//                 <div className="text-wrapper-6">BSV</div>
-//               </div>
-//               <div className="frame-28">
-//                 <div className="text-wrapper-5">+53.6%</div>
-//                 <div className="group-3">
-//                   <div className="rectangle-6" />
-//                 </div>
-//                 <div className="text-wrapper-6">ETH</div>
-//               </div>
-//               <div className="frame-28">
-//                 <div className="text-wrapper-7">-59.6%</div>
-//                 <div className="rectangle-wrapper">
-//                   <div className="rectangle-7" />
-//                 </div>
-//                 <div className="text-wrapper-6">BNB</div>
-//               </div>
-//               <div className="frame-28">
-//                 <div className="text-wrapper-5">+53.6%</div>
-//                 <div className="group-4">
-//                   <div className="rectangle-8" />
-//                 </div>
-//                 <div className="text-wrapper-6">SOL</div>
-//               </div>
-//               <div className="frame-28">
-//                 <div className="text-wrapper-7">-29.6%</div>
-//                 <div className="group-3">
-//                   <div className="rectangle-9" />
-//                 </div>
-//                 <div className="text-wrapper-6">DOGE</div>
-//               </div>
-//             </div>
-//             <img className="line-2" alt="Line" src="line-47.svg" />
-//           </div>
-//         </div>
-//         <div className="group-5">
-//           <div className="overlap-2">
-//             <div className="frame-29">
-//               <div className="frame-30">
-//                 <PropertyDefaultWrapper
-//                   className="frame-instance"
-//                   iconsCryptoBitcoinBtcClassName="frame-48095476"
-//                   iconsCryptoBitcoinShape="shape-8.svg"
-//                   property1="default"
-//                 />
-//                 <Frame48095477
-//                   className="frame-instance"
-//                   iconsCryptoEthClassName="frame-48095477-instance"
-//                   iconsCryptoShape="shape-9.svg"
-//                   property1="default"
-//                 />
-//                 <DivWrapper
-//                   className="frame-instance"
-//                   iconsCryptoXemOFctClassName="frame-48095478"
-//                   iconsCryptoXemOShape="shape-10.svg"
-//                   property1="default"
-//                 />
-//                 <Frame48095479
-//                   className="frame-instance"
-//                   image="image.png"
-//                   property1="default"
-//                 />
-//               </div>
-//               <div className="frame-30">
-//                 <PropertyDefaultWrapper
-//                   className="frame-instance"
-//                   iconsCryptoBitcoinBtcClassName="frame-48095476-instance"
-//                   iconsCryptoBitcoinShape="shape-11.svg"
-//                   property1="default"
-//                 />
-//                 <Frame48095477
-//                   className="frame-instance"
-//                   group="group-13019-2.png"
-//                   iconsCryptoEthClassNameOverride="frame-31"
-//                   iconsCryptoImg="shape-12.svg"
-//                   property1="variant-3"
-//                 />
-//                 <DivWrapper
-//                   className="frame-instance"
-//                   iconsCryptoXemOFctClassName="frame-48095478-instance"
-//                   iconsCryptoXemOShape="shape-13.svg"
-//                   property1="default"
-//                 />
-//                 <Frame48095479
-//                   className="frame-instance"
-//                   image="image-107-2.png"
-//                   property1="default"
-//                 />
-//               </div>
-//             </div>
-//             <div className="group-6">
-//               <Button
-//                 className="button-14"
-//                 property1="variant-3"
-//                 propertyWrapperDivClassName="button-instance"
-//                 propertyWrapperHasRectangle={false}
-//                 propertyWrapperPropertyClassName="button-14-instance"
-//                 propertyWrapperText="COLLECTIONS"
-//               />
-//               <div className="rectangle-10" />
-//             </div>
-//           </div>
-//         </div>
-//         <div className="group-7">
-//           <div className="overlap-3">
-//             <div className="frame-32">
-//               <Frame48095497
-//                 className="design-component-instance-node-2"
-//                 property1="default"
-//                 userLightEllipse="ellipse-45-4.svg"
-//               />
-//               <Frame48095501
-//                 className="design-component-instance-node-2"
-//                 property1="default"
-//                 sendLightSubtract="subtract-4.svg"
-//               />
-//               <Frame48095502 property1="default" />
-//               <Frame48095503 property1="default" />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 export const Portfolio = () => {
   return (
     <div
@@ -254,18 +9,10 @@ export const Portfolio = () => {
         <div className="shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.1)] bg-[#000921] flex flex-col justify-end h-16 shrink-0 px-16 py-2">
           <div className="bg-[#000921] flex flex-row justify-between mr-3 items-center">
             <div className="self-start flex flex-row gap-10 items-start">
-              <div className="bg-[url(https://file.rendit.io/n/Fl3po3cyzZk8NtWFcmUt.svg)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat relative flex flex-col justify-center w-12 shrink-0 items-end pt-3 pb-2 px-1">
+              <div className=" bg-cover bg-50%_50% bg-blend-normal bg-no-repeat relative flex flex-col justify-center w-12 shrink-0 items-end pt-3 pb-2 px-1">
                 <img
-                  src="https://file.rendit.io/n/pIe1HiGo6vEOBkMytbo7.svg"
-                  className="w-4 h-3 absolute top-2 left-4"
-                />
-                <img
-                  src="https://file.rendit.io/n/5HAnuHoHlQxKYJ1r08Kw.svg"
-                  className="w-4 h-3 absolute top-3 left-1"
-                />
-                <img
-                  src="https://file.rendit.io/n/E9la5OHeqjESppohLcfI.svg"
-                  className="relative w-4"
+                  src="https://file.rendit.io/n/bjc0w05cmyb1VYrgjce3.svg"
+                  className="w-10 absolute"
                 />
               </div>
 
@@ -288,11 +35,11 @@ export const Portfolio = () => {
               </div>
             </div>
             <div className="flex flex-row gap-4 items-start">
-              <img
+              {/* <img
                 src="https://file.rendit.io/n/0HvvKTecgnWYkavaGTQ2.png"
                 className="w-6 shrink-0"
                 id="MetaMaskFox"
-              />
+              /> */}
               <div className="relative flex flex-col justify-end mt-1 w-4 shrink-0 items-center pt-4 px-1">
                 <div
                   className="w-4 h-4 bg-[url(https://file.rendit.io/n/khtedfgG6LvXS5iaQata.svg)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat absolute top-0 left-0 flex flex-col items-end pr-px py-px"
@@ -347,22 +94,23 @@ export const Portfolio = () => {
               <div className="bg-[#000921] flex flex-col w-16 h-8 shrink-0 items-center py-2">
                 <img
                   src="https://file.rendit.io/n/ZyHRsqntMFlsM0sxPvFI.svg"
-                  className="w-3"
+                  className="w-5"
                   id="Subtract1"
                 />
+                {/* arrow */}
               </div>
-              <div className="bg-[#000921] relative flex flex-col w-16 items-center px-5 py-2">
+              <div className="bg-[#000921] relative flex px-5 flex-col w-8 h-8 shrink-0 items-center py-2">
                 <img
                   src="https://file.rendit.io/n/141lPTPCiNbu83dXa7Fv.svg"
-                  className="w-px h-2 absolute top-3 left-6"
+                  className="w-5 h-2 absolute top-4 left-15"
                 />
                 <img
                   src="https://file.rendit.io/n/CxOeBtfqCOhkgAiXNzyx.svg"
-                  className="w-px h-1 absolute top-4 left-8"
+                  className="w-1 h-1 absolute top-5 left-9"
                 />
                 <img
                   src="https://file.rendit.io/n/3sIRi2mr6Q79wo5EmZQf.svg"
-                  className="w-px h-2 absolute top-3 left-8"
+                  className="w-1 h-2 absolute top-4 left-10"
                 />
                 <div className="border-solid border-white relative w-5 h-4 shrink-0 border rounded-sm" />
               </div>
@@ -379,9 +127,9 @@ export const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col mt-16 gap-10 w-[1082px]">
+          <div className="flex flex-col mt-16 mr-20 gap-10 w-[1082px] ">
             <div className="flex flex-row gap-12 items-start">
-              <div className="relative flex flex-col w-[235px] shrink-0">
+              <div className="relative flex flex-col w-[235px] shrink-0 ">
                 <div className="w-[235px] h-40 bg-[#092879] absolute top-0 left-0 rounded-tl-lg rounded-tr-lg" />
                 <div
                   className="border-solid border-white w-56 h-0 absolute top-40 left-2 border-0"
@@ -547,11 +295,11 @@ export const Portfolio = () => {
                     >
                       <img
                         src="https://file.rendit.io/n/cUwEFlHYb7qgGwhZfiu1.svg"
-                        className="w-3"
+                        className="w-3 h-7"
                         id="Shape2"
                       />
                     </div>
-                    <div className="self-start flex flex-col w-12 shrink-0 items-start">
+                    <div className="self-start flex flex-col w-12 shrink-0 items-start ">
                       <div
                         className="text-sm font-['Bai_Jamjuree'] font-light text-white"
                         id="BTC3"
@@ -581,11 +329,11 @@ export const Portfolio = () => {
                     >
                       <img
                         src="https://file.rendit.io/n/0SGKy62n28aShmlcrJO4.svg"
-                        className="w-3"
+                        className="w-3 h-7"
                         id="Shape3"
                       />
                     </div>
-                    <div className="self-start flex flex-col w-8 shrink-0 items-start">
+                    <div className="self-start flex flex-col w-8 shrink-0 items-start left-[100px]">
                       <div
                         className="text-sm font-['Bai_Jamjuree'] font-light text-white"
                         id="BTC4"
@@ -673,7 +421,7 @@ export const Portfolio = () => {
                       >
                         <img
                           src="https://file.rendit.io/n/XYvf2lCQmweIWKahhyIv.svg"
-                          className="w-3"
+                          className="w-3 h-7"
                           id="Shape5"
                         />
                       </div>
@@ -736,7 +484,7 @@ export const Portfolio = () => {
                     >
                       <img
                         src="https://file.rendit.io/n/0SGKy62n28aShmlcrJO4.svg"
-                        className="w-3"
+                        className="w-3 h-7"
                         id="Shape7"
                       />
                     </div>
